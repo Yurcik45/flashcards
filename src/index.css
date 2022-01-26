@@ -1,6 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:wght@200;300;400;500;600;700;800&family=Press+Start+2P&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  /* font-family: 'Lily Script One'; */
+  font-family: 'Arvo', serif;
   /* border: 1px solid red; */
 }
