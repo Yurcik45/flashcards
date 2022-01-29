@@ -1,7 +1,2951 @@
 {
-  "flashcards": [
-    {"original": "ask", "translate": "спрашивать"},
-    {"original": "tell", "translate": "рассказывать"},
-    {"original": "add", "translate": "добавлять"}
+ "flashcards": [
+    {
+     "original":"wery well",
+     "translate":"очень хорошо"
+    },
+    {
+     "original":"in this place",
+     "translate":"в этом месте"
+    },
+    {
+     "original":"better",
+     "translate":"лучше"
+    },
+    {
+     "original":"there",
+     "translate":"там"
+    },
+    {
+     "original":"often",
+     "translate":"часто"
+    },
+    {
+     "original":"remember",
+     "translate":"помнить"
+    },
+    {
+     "original":"person",
+     "translate":"человек"
+    },
+    {
+     "original":"their",
+     "translate":"их / это их проблемы"
+    },
+    {
+     "original":"our",
+     "translate":"наш"
+    },
+    {
+     "original":"this thing",
+     "translate":"эту вещь"
+    },
+    {
+     "original":"them",
+     "translate":"им"
+    },
+    {
+     "original":"agree",
+     "translate":"согласен"
+    },
+    {
+     "original":"more",
+     "translate":"большего / я хочу большего"
+    },
+    {
+     "original":"say",
+     "translate":"говорить / сказать"
+    },
+    {
+     "original":"tell",
+     "translate":"сказать кому-то"
+    },
+    {
+     "original":"thing",
+     "translate":"вещь"
+    },
+    {
+     "original":"be",
+     "translate":"быть"
+    },
+    {
+     "original":"by",
+     "translate":"кем-то"
+    },
+    {
+     "original":"done",
+     "translate":"была"
+    },
+    {
+     "original":"was done",
+     "translate":"была сделана"
+    },
+    {
+     "original":"as",
+     "translate":"как (в диалоге - как я вижу)"
+    },
+    {
+     "original":"how",
+     "translate":"как / в общем"
+    },
+    {
+     "original":"what",
+     "translate":"что"
+    },
+    {
+     "original":"where",
+     "translate":"где"
+    },
+    {
+     "original":"why",
+     "translate":"почему"
+    },
+    {
+     "original":"so",
+     "translate":"так / (я думаю так)"
+    },
+    {
+     "original":"when",
+     "translate":"когда"
+    },
+    {
+     "original":"how",
+     "translate":"как"
+    },
+    {
+     "original":"mistake",
+     "translate":"ошибка"
+    },
+    {
+     "original":"a lot",
+     "translate":"когда хочешь сказать (много} в утвердительном предложении (ты работаешь много)"
+    },
+    {
+     "original":"lots of",
+     "translate":"много / например когда (он имеет много...)"
+    },
+    {
+     "original":"few",
+     "translate":"мало (когда исчесляемое, например люди)"
+    },
+    {
+     "original":"far",
+     "translate":"далеко"
+    },
+    {
+     "original":"near",
+     "translate":"близко"
+    },
+    {
+     "original":"often",
+     "translate":"часто"
+    },
+    {
+     "original":"these",
+     "translate":"эти"
+    },
+    {
+     "original":"evening",
+     "translate":"вечер"
+    },
+    {
+     "original":"difficult",
+     "translate":"сложный, трудный"
+    },
+    {
+     "original":"find",
+     "translate":"найти"
+    },
+    {
+     "original":"here",
+     "translate":"тут"
+    },
+    {
+     "original":"whose",
+     "translate":"чей/чья"
+    },
+    {
+     "original":"which",
+     "translate":"которыйб какой"
+    },
+    {
+     "original":"soon",
+     "translate":"скоро"
+    },
+    {
+     "original":"another",
+     "translate":"другой,другая,другом"
+    },
+    {
+     "original":"hear",
+     "translate":"слышать"
+    },
+    {
+     "original":"rich",
+     "translate":"богатство"
+    },
+    {
+     "original":"also",
+     "translate":"тоже,так же"
+    },
+    {
+     "original":"well",
+     "translate":"хорошо"
+    },
+    {
+     "original":"badly",
+     "translate":"когда дословно (плохо)"
+    },
+    {
+     "original":"that",
+     "translate":"тот"
+    },
+    {
+     "original":"it",
+     "translate":"этот"
+    },
+    {
+     "original":"wrong",
+     "translate":"не прав,ложь"
+    },
+    {
+     "original":"there",
+     "translate":"там"
+    },
+    {
+     "original":"less",
+     "translate":"меньше"
+    },
+    {
+     "original":"tomorrow",
+     "translate":"завтра"
+    },
+    {
+     "original":"yesterday",
+     "translate":"вчера"
+    },
+    {
+     "original":"let`s",
+     "translate":"давай"
+    },
+    {
+     "original":"mistake",
+     "translate":"ошибки"
+    },
+    {
+     "original":"more then",
+     "translate":"больше чем"
+    },
+    {
+     "original":"pound",
+     "translate":"фунт"
+    },
+    {
+     "original":"a hundred (one hundred)",
+     "translate":"100"
+    },
+    {
+     "original":"earn",
+     "translate":"заработать"
+    },
+    {
+     "original":"thousand",
+     "translate":"1000"
+    },
+    {
+     "original":"much more",
+     "translate":"на много больше"
+    },
+    {
+     "original":"enjoy",
+     "translate":"обожать, получать удовольствие"
+    },
+    {
+     "original":"soon",
+     "translate":"скоро"
+    },
+    {
+     "original":"then",
+     "translate":"тогда, затем, в таком случае"
+    },
+    {
+     "original":"discuss",
+     "translate":"обсуждать"
+    },
+    {
+     "original":"happen",
+     "translate":"происходить, случаться"
+    },
+    {
+     "original":"give",
+     "translate":"давать"
+    },
+    {
+     "original":"take",
+     "translate":"брать, принимать"
+    },
+    {
+     "original":"offer",
+     "translate":"предложение"
+    },
+    {
+     "original":"way",
+     "translate":"путь, способ"
+    },
+    {
+     "original":"sure",
+     "translate":"уверен"
+    },
+    {
+     "original":"over",
+     "translate":"через"
+    },
+    {
+     "original":"maybe",
+     "translate":"может быть"
+    },
+    {
+     "original":"fence",
+     "translate":"забор (ограда)"
+    },
+    {
+     "original":"let",
+     "translate":"позволять"
+    },
+    {
+     "original":"husband",
+     "translate":"муж"
+    },
+    {
+     "original":"some",
+     "translate":"некоторые"
+    },
+    {
+     "original":"something",
+     "translate":"что-то"
+    },
+    {
+     "original":"anything",
+     "translate":"что-либо"
+    },
+    {
+     "original":"no one",
+     "translate":"никто"
+    },
+    {
+     "original":"put",
+     "translate":"положить"
+    },
+    {
+     "original":"even",
+     "translate":"даже"
+    },
+    {
+     "original":"try",
+     "translate":"стараться, пытаться"
+    },
+    {
+     "original":"still",
+     "translate":"все ещё"
+    },
+    {
+     "original":"better",
+     "translate":"лучше"
+    },
+    {
+     "original":"great",
+     "translate":"великий"
+    },
+    {
+     "original":"than",
+     "translate":"чем"
+    },
+    {
+     "original":"away",
+     "translate":"отстуствовать"
+    },
+    {
+     "original":"afternoon",
+     "translate":"день, после полудня"
+    },
+    {
+     "original":"evening",
+     "translate":"вечер"
+    },
+    {
+     "original":"answer",
+     "translate":"ответ"
+    },
+    {
+     "original":"very famous",
+     "translate":"очень знаменитый"
+    },
+    {
+     "original":"keep",
+     "translate":"держать, хранить"
+    },
+    {
+     "original":"put",
+     "translate":"положить"
+    },
+    {
+     "original":"around",
+     "translate":"вокруг"
+    },
+    {
+     "original":"must",
+     "translate":"должен"
+    },
+    {
+     "original":"should",
+     "translate":"следует (тебе следует ...)"
+    },
+    {
+     "original":"spend",
+     "translate":"тратить"
+    },
+    {
+     "original":"would",
+     "translate":"бы (i would like)"
+    },
+    {
+     "original":"could",
+     "translate":"мог, мог бы"
+    },
+    {
+     "original":"may / might",
+     "translate":"возможно"
+    },
+    {
+     "original":"poor",
+     "translate":"бедный"
+    },
+    {
+     "original":"become",
+     "translate":"стать, становиться кем-то"
+    },
+    {
+     "original":"famous",
+     "translate":"знаменитый"
+    },
+    {
+     "original":"unite",
+     "translate":"объединять"
+    },
+    {
+     "original":"united",
+     "translate":"объедененные"
+    },
+    {
+     "original":"bring",
+     "translate":"принести"
+    },
+    {
+     "original":"prefer",
+     "translate":"предпочтение"
+    },
+    {
+     "original":"cup",
+     "translate":"чашка"
+    },
+    {
+     "original":"tall",
+     "translate":"высокий (только рост, а вообще - high)"
+    },
+    {
+     "original":"low",
+     "translate":"низкий"
+    },
+    {
+     "original":"late",
+     "translate":"поздно"
+    },
+    {
+     "original":"early",
+     "translate":"рано"
+    },
+    {
+     "original":"ago",
+     "translate":"назад (2 дня назад)"
+    },
+    {
+     "original":"just",
+     "translate":"просто ИЛИ только что"
+    },
+    {
+     "original":"already",
+     "translate":"уже"
+    },
+    {
+     "original":"ever",
+     "translate":"когда-либо"
+    },
+    {
+     "original":"since",
+     "translate":"с тех пор как"
+    },
+    {
+     "original":"improve",
+     "translate":"улучшать"
+    },
+    {
+     "original":"cry",
+     "translate":"плакать"
+    },
+    {
+     "original":"feed",
+     "translate":"кормить"
+    },
+    {
+     "original":"nice",
+     "translate":"приятный"
+    },
+    {
+     "original":"glad",
+     "translate":"рад"
+    },
+    {
+     "original":"kind",
+     "translate":"добрый ИЛИ род (какого рода книги читаешь)"
+    },
+    {
+     "original":"through",
+     "translate":"через"
+    },
+    {
+     "original":"guess",
+     "translate":"догадаться, отгадать"
+    },
+    {
+     "original":"remember",
+     "translate":"запомнить"
+    },
+    {
+     "original":"forget",
+     "translate":"забыть"
+    },
+    {
+     "original":"leave",
+     "translate":" оставлять, уезжать, уходить"
+    },
+    {
+     "original":"care",
+     "translate":"забота"
+    },
+    {
+     "original":"actually",
+     "translate":"в действительности"
+    },
+    {
+     "original":"enough",
+     "translate":"достаточно"
+    },
+    {
+     "original":"belong",
+     "translate":"пренадлежать"
+    },
+    {
+     "original":"own",
+     "translate":"владеть"
+    },
+    {
+     "original":"hell",
+     "translate":"ад"
+    },
+    {
+     "original":"terrible",
+     "translate":"ужасное"
+    },
+    {
+     "original":"paradise",
+     "translate":"рай"
+    },
+    {
+     "original":"wonderful",
+     "translate":"прекрасное"
+    },
+    {
+     "original":"mind",
+     "translate":"ум"
+    },
+    {
+     "original":"opinion",
+     "translate":"мнение"
+    },
+    {
+     "original":"view",
+     "translate":"взгляд, вид"
+    },
+    {
+     "original":"whole",
+     "translate":"целый ИЛИ весь"
+    },
+    {
+     "original":"decide",
+     "translate":"решить"
+    },
+    {
+     "original":"myself",
+     "translate":"сам"
+    },
+    {
+     "original":"prefer",
+     "translate":"предпочитаю"
+    },
+    {
+     "original":"yourself",
+     "translate":"сам (когда кому-то говоришь)"
+    },
+    {
+     "original":"pretty",
+     "translate":"приятный, милый, довольно (хорошо)"
+    },
+    {
+     "original":"the same",
+     "translate":"такой же, так же"
+    },
+    {
+     "original":"honey",
+     "translate":"мед"
+    },
+    {
+     "original":"excuse",
+     "translate":"извини"
+    },
+    {
+     "original":"weather",
+     "translate":"погода"
+    },
+    {
+     "original":"warm",
+     "translate":"тёплый"
+    },
+    {
+     "original":"degree",
+     "translate":"градус"
+    },
+    {
+     "original":"below",
+     "translate":"ниже"
+    },
+    {
+     "original":"above",
+     "translate":"выше"
+    },
+    {
+     "original":"during",
+     "translate":"во время"
+    },
+    {
+     "original":"conversation",
+     "translate":"разговор"
+    },
+    {
+     "original":"bill",
+     "translate":"счет (в ресторане)"
+    },
+    {
+     "original":"cash",
+     "translate":"наличка"
+    },
+    {
+     "original":"near",
+     "translate":"рядом, близко"
+    },
+    {
+     "original":"bag",
+     "translate":"сумка"
+    },
+    {
+     "original":"heavy",
+     "translate":"тяжелая (вещь)"
+    },
+    {
+     "original":"clothes",
+     "translate":"одежда"
+    },
+    {
+     "original":"exponsive",
+     "translate":"дорого"
+    },
+    {
+     "original":"shirt",
+     "translate":"рубашка"
+    },
+    {
+     "original":"skirt",
+     "translate":"юбка"
+    },
+    {
+     "original":"wallet",
+     "translate":"бумажник"
+    },
+    {
+     "original":"lost",
+     "translate":"потерять"
+    },
+    {
+     "original":"wear",
+     "translate":"носить (что-то на себе)"
+    },
+    {
+     "original":"floor",
+     "translate":"пол"
+    },
+    {
+     "original":"article",
+     "translate":"статья"
+    },
+    {
+     "original":"clever",
+     "translate":"умный"
+    },
+    {
+     "original":"foreign",
+     "translate":"иностранный"
+    },
+    {
+     "original":"foreigner",
+     "translate":"иностранец"
+    },
+    {
+     "original":"exercize",
+     "translate":"упражнение"
+    },
+    {
+     "original":"between",
+     "translate":"между"
+    },
+    {
+     "original":"most",
+     "translate":"большенство"
+    },
+    {
+     "original":"probably",
+     "translate":"возможно"
+    },
+    {
+     "original":"perhaps",
+     "translate":"возможно, может быть"
+    },
+    {
+     "original":"probability",
+     "translate":"вероятность"
+    },
+    {
+     "original":"matter",
+     "translate":"иметь значение"
+    },
+    {
+     "original":"part",
+     "translate":"часть"
+    },
+    {
+     "original":"against",
+     "translate":"против"
+    },
+    {
+     "original":"decision",
+     "translate":"решение"
+    },
+    {
+     "original":"such",
+     "translate":"такие, таких"
+    },
+    {
+     "original":"case",
+     "translate":"случай, дело"
+    },
+    {
+     "original":"issue",
+     "translate":"вопрос, тема для обсуждения"
+    },
+    {
+     "original":"exact",
+     "translate":"точный"
+    },
+    {
+     "original":"figures",
+     "translate":"цифры"
+    },
+    {
+     "original":"mean",
+     "translate":"иметь в виду"
+    },
+    {
+     "original":"exactly",
+     "translate":"именно то"
+    },
+    {
+     "original":"goverment",
+     "translate":"правительство"
+    },
+    {
+     "original":"area",
+     "translate":"область, район"
+    },
+    {
+     "original":"bring",
+     "translate":"приносить"
+    },
+    {
+     "original":"without",
+     "translate":"без"
+    },
+    {
+     "original":"hold",
+     "translate":"держать"
+    },
+    {
+     "original":"point",
+     "translate":"точка"
+    },
+    {
+     "original":"pointed",
+     "translate":"указать (на что-то)"
+    },
+    {
+     "original":"ear",
+     "translate":"уши"
+    },
+    {
+     "original":"though OR although",
+     "translate":"хотя (я стараюсь, хотя это ...)"
+    },
+    {
+     "original":"both",
+     "translate":"оба"
+    },
+    {
+     "original":"provide",
+     "translate":"обеспечивать, предоставлять"
+    },
+    {
+     "original":"conditions",
+     "translate":"условия"
+    },
+    {
+     "original":"chair",
+     "translate":"стул"
+    },
+    {
+     "original":"till OR until",
+     "translate":"до (до пяти)"
+    },
+    {
+     "original":"consider",
+     "translate":"учитывать, рассматривать"
+    },
+    {
+     "original":"lose",
+     "translate":"потерять"
+    },
+    {
+     "original":"decision",
+     "translate":"решение"
+    },
+    {
+     "original":"among",
+     "translate":"среди"
+    },
+    {
+     "original":"crowd",
+     "translate":"толпа"
+    },
+    {
+     "original":"however",
+     "translate":"тем не менее"
+    },
+    {
+     "original":"law",
+     "translate":"закон"
+    },
+    {
+     "original":"against",
+     "translate":"против, вопреки"
+    },
+    {
+     "original":"break",
+     "translate":"ломать"
+    },
+    {
+     "original":"break down",
+     "translate":"сломатся"
+    },
+    {
+     "original":"follow",
+     "translate":"следовать"
+    },
+    {
+     "original":"advice",
+     "translate":"совет"
+    },
+    {
+     "original":"member",
+     "translate":"член, участник"
+    },
+    {
+     "original":"membership",
+     "translate":"членство"
+    },
+    {
+     "original":"guest",
+     "translate":"гость"
+    },
+    {
+     "original":"almost",
+     "translate":"почти что, практически"
+    },
+    {
+     "original":"together",
+     "translate":"вместе"
+    },
+    {
+     "original":"spend time",
+     "translate":"проводить время"
+    },
+    {
+     "original":"include",
+     "translate":"включать (в себя)"
+    },
+    {
+     "original":"inclusive",
+     "translate":"вклечено (все включено)"
+    },
+    {
+     "original":"continue",
+     "translate":"продолжать"
+    },
+    {
+     "original":"behind",
+     "translate":"позади"
+    },
+    {
+     "original":"side",
+     "translate":"сторона"
+    },
+    {
+     "original":"turn",
+     "translate":"поворачивать"
+    },
+    {
+     "original":"grow",
+     "translate":"расти"
+    },
+    {
+     "original":"hurt",
+     "translate":"задеть, повредить"
+    },
+    {
+     "original":"destroy OR ruin",
+     "translate":"разрушать"
+    },
+    {
+     "original":"while",
+     "translate":"в то время как"
+    },
+    {
+     "original":"alive",
+     "translate":"живой"
+    },
+    {
+     "original":"bought",
+     "translate":"купить"
+    },
+    {
+     "original":"alone",
+     "translate":"один (он один)"
+    },
+    {
+     "original":"lonely",
+     "translate":"одинокий"
+    },
+    {
+     "original":"punish",
+     "translate":"наказывать"
+    },
+    {
+     "original":"criminal",
+     "translate":"преступник"
+    },
+    {
+     "original":"prepare",
+     "translate":"готовиться, подготавливаться"
+    },
+    {
+     "original":"truth",
+     "translate":"правда"
+    },
+    {
+     "original":"lie",
+     "translate":"ложь"
+    },
+    {
+     "original":"chance",
+     "translate":"шанс"
+    },
+    {
+     "original":"somebody OR someone",
+     "translate":"кто-то"
+    },
+    {
+     "original":"reason",
+     "translate":"причина"
+    },
+    {
+     "original":"wish",
+     "translate":"желать (кому-то что-то)"
+    },
+    {
+     "original":"choose",
+     "translate":"выбирать"
+    },
+    {
+     "original":"develop",
+     "translate":"развивать"
+    },
+    {
+     "original":"abilities",
+     "translate":"способности"
+    },
+    {
+     "original":"grow",
+     "translate":"выращивать, расти"
+    },
+    {
+     "original":"decide",
+     "translate":"решить"
+    },
+    {
+     "original":"aim",
+     "translate":"цель"
+    },
+    {
+     "original":"to achieve",
+     "translate":"достичь"
+    },
+    {
+     "original":"reach",
+     "translate":"достичь"
+    },
+    {
+     "original":"seems",
+     "translate":"казаться"
+    },
+    {
+     "original":"solve",
+     "translate":"решить"
+    },
+    {
+     "original":"explain",
+     "translate":"обьяснить"
+    },
+    {
+     "original":"introduce",
+     "translate":"познакомить, представить"
+    },
+    {
+     "original":"spend",
+     "translate":"тратить"
+    },
+    {
+     "original":"the following",
+     "translate":"следущее"
+    },
+    {
+     "original":"sentence",
+     "translate":"предложение"
+    },
+    {
+     "original":"phrase",
+     "translate":"фраза"
+    },
+    {
+     "original":"expression",
+     "translate":"выражение"
+    },
+    {
+     "original":"look after",
+     "translate":"следить"
+    },
+    {
+     "original":"ill",
+     "translate":"болен"
+    },
+    {
+     "original":"opinion",
+     "translate":"мнение"
+    },
+    {
+     "original":"topic",
+     "translate":"тема"
+    },
+    {
+     "original":"subject",
+     "translate":"пример"
+    },
+    {
+     "original":"fresh",
+     "translate":"свежий"
+    },
+    {
+     "original":"form",
+     "translate":"формировать"
+    },
+    {
+     "original":"burn",
+     "translate":"горит"
+    },
+    {
+     "original":"belong",
+     "translate":"принадлежать, относиться"
+    },
+    {
+     "original":"least",
+     "translate":"наименее (наименее интерестно для меня)"
+    },
+    {
+     "original":"at least",
+     "translate":"по крайней мере"
+    },
+    {
+     "original":"several",
+     "translate":"несколько"
+    },
+    {
+     "original":"once",
+     "translate":"однажды"
+    },
+    {
+     "original":"adult",
+     "translate":"взрослый"
+    },
+    {
+     "original":"bravely",
+     "translate":"смело"
+    },
+    {
+     "original":"rights",
+     "translate":"права (человека)"
+    },
+    {
+     "original":"arrive",
+     "translate":"прибывать (куда-то)"
+    },
+    {
+     "original":"lecture",
+     "translate":"лекция"
+    },
+    {
+     "original":"boring",
+     "translate":"скучно"
+    },
+    {
+     "original":"tiring",
+     "translate":"утомительная"
+    },
+    {
+     "original":"allow",
+     "translate":"позволять, разрешать"
+    },
+    {
+     "original":"lost",
+     "translate":"потерянный"
+    },
+    {
+     "original":"get lost",
+     "translate":"заблудиться"
+    },
+    {
+     "original":"cause",
+     "translate":"причина, вызывать"
+    },
+    {
+     "original":"deal",
+     "translate":"иметь дело, сделка"
+    },
+    {
+     "original":"customer",
+     "translate":"клиент, заказчик"
+    },
+    {
+     "original":"whether",
+     "translate":"ли"
+    },
+    {
+     "original":"used",
+     "translate":"привыкший"
+    },
+    {
+     "original":"anyway",
+     "translate":"тем не менее"
+    },
+    {
+     "original":"research",
+     "translate":"исследования"
+    },
+    {
+     "original":"refuse",
+     "translate":"отказаться"
+    },
+    {
+     "original":"suggest",
+     "translate":"предлагать"
+    },
+    {
+     "original":"cross",
+     "translate":"пересекать, переходить"
+    },
+    {
+     "original":"across",
+     "translate":"через"
+    },
+    {
+     "original":"along",
+     "translate":"вдоль"
+    },
+    {
+     "original":"on foot",
+     "translate":"пешком"
+    },
+    {
+     "original":"leg",
+     "translate":"нога"
+    },
+    {
+     "original":"arm",
+     "translate":"рука"
+    },
+    {
+     "original":"hand",
+     "translate":"рука(ладонь)"
+    },
+    {
+     "original":"able",
+     "translate":"смог, способный"
+    },
+    {
+     "original":"unable",
+     "translate":"не способный"
+    },
+    {
+     "original":"decision",
+     "translate":"решение"
+    },
+    {
+     "original":"policy",
+     "translate":"политика (линия поведения)"
+    },
+    {
+     "original":"appear",
+     "translate":"появиться"
+    },
+    {
+     "original":"disappear",
+     "translate":"исчезнуть"
+    },
+    {
+     "original":"suddenly",
+     "translate":"вдруг, внезапно"
+    },
+    {
+     "original":"escape",
+     "translate":"скрыться"
+    },
+    {
+     "original":"sell",
+     "translate":"продавать"
+    },
+    {
+     "original":"flat",
+     "translate":"квартира"
+    },
+    {
+     "original":"forward",
+     "translate":"вперед"
+    },
+    {
+     "original":"look forward",
+     "translate":"с нетерпением ждать"
+    },
+    {
+     "original":"ahead",
+     "translate":"впереди"
+    },
+    {
+     "original":"expect",
+     "translate":"ожидать"
+    },
+    {
+     "original":"worst",
+     "translate":"худший, хуже всего"
+    },
+    {
+     "original":"proud",
+     "translate":" гордость"
+    },
+    {
+     "original":"fall",
+     "translate":"падать"
+    },
+    {
+     "original":"experience",
+     "translate":"опыт, испытывать"
+    },
+    {
+     "original":"remain",
+     "translate":"оставаться (друзьями)"
+    },
+    {
+     "original":"belong",
+     "translate":"принадлежать"
+    },
+    {
+     "original":"pass",
+     "translate":"проходить, сдавать"
+    },
+    {
+     "original":"fail",
+     "translate":"завалить, провалить"
+    },
+    {
+     "original":"birth",
+     "translate":"рождение"
+    },
+    {
+     "original":"weak",
+     "translate":"слабый"
+    },
+    {
+     "original":"weak point",
+     "translate":"слабое место"
+    },
+    {
+     "original":"possible",
+     "translate":"возможно (впринцыпе)"
+    },
+    {
+     "original":"impossible",
+     "translate":"невозможно"
+    },
+    {
+     "original":"drug",
+     "translate":"наркотик"
+    },
+    {
+     "original":"take",
+     "translate":"брать, принимать"
+    },
+    {
+     "original":"pill",
+     "translate":"таблетка"
+    },
+    {
+     "original":"loud",
+     "translate":"громкий"
+    },
+    {
+     "original":"noise",
+     "translate":"шум"
+    },
+    {
+     "original":"quiet",
+     "translate":"тихий"
+    },
+    {
+     "original":"report",
+     "translate":"сообщать, отчет"
+    },
+    {
+     "original":"sign",
+     "translate":"подписывать"
+    },
+    {
+     "original":"view",
+     "translate":"взгляд"
+    },
+    {
+     "original":"carry",
+     "translate":"нести"
+    },
+    {
+     "original":"difference",
+     "translate":"разница"
+    },
+    {
+     "original":"agreement",
+     "translate":"соглашение"
+    },
+    {
+     "original":"disagreement",
+     "translate":"несогласие"
+    },
+    {
+     "original":"value",
+     "translate":"значение, ценность (даже ценить)"
+    },
+    {
+     "original":"mean",
+     "translate":"означать, иметь в виду"
+    },
+    {
+     "original":"hate",
+     "translate":"ненавидить"
+    },
+    {
+     "original":"rest",
+     "translate":"отдых"
+    },
+    {
+     "original":"relax",
+     "translate":"расслабиться, отдохнуть"
+    },
+    {
+     "original":"joke",
+     "translate":"шутка"
+    },
+    {
+     "original":"glad",
+     "translate":"рад"
+    },
+    {
+     "original":"a bit",
+     "translate":"чуть (чуть-чуть)"
+    },
+    {
+     "original":"couple",
+     "translate":"пару (пару ошибок и т.д.)"
+    },
+    {
+     "original":"difficulty",
+     "translate":"трудность"
+    },
+    {
+     "original":"trouble",
+     "translate":"беда"
+    },
+    {
+     "original":"alright",
+     "translate":"впорядке"
+    },
+    {
+     "original":"unforgettable",
+     "translate":"незабываемый"
+    },
+    {
+     "original":"extremely",
+     "translate":"черезвычайно (важнее very)"
+    },
+    {
+     "original":"tired",
+     "translate":"уставший"
+    },
+    {
+     "original":"brilliant",
+     "translate":"блестящий"
+    },
+    {
+     "original":"hit",
+     "translate":"ударить"
+    },
+    {
+     "original":"kick",
+     "translate":"пнуть, ударить"
+    },
+    {
+     "original":"supper OR diner",
+     "translate":"ужин"
+    },
+    {
+     "original":"lunch",
+     "translate":"обед"
+    },
+    {
+     "original":"breakfast",
+     "translate":"завтрак"
+    },
+    {
+     "original":"cool",
+     "translate":"прохладно, класно"
+    },
+    {
+     "original":"half",
+     "translate":"половина"
+    },
+    {
+     "original":"enough",
+     "translate":"достаточно"
+    },
+    {
+     "original":"furniture",
+     "translate":"мебель"
+    },
+    {
+     "original":"chair",
+     "translate":"стул"
+    },
+    {
+     "original":"soft",
+     "translate":"мягкий"
+    },
+    {
+     "original":"spell",
+     "translate":"правильно писать (спросить как это писать по буквам)"
+    },
+    {
+     "original":"one more time",
+     "translate":"еще один раз"
+    },
+    {
+     "original":"past",
+     "translate":"прошлое"
+    },
+    {
+     "original":"present",
+     "translate":"подарок"
+    },
+    {
+     "original":"speech",
+     "translate":"речь"
+    },
+    {
+     "original":"inside",
+     "translate":"внутри"
+    },
+    {
+     "original":"quiet",
+     "translate":"тихо"
+    },
+    {
+     "original":"quite",
+     "translate":"довольно (довольно интерестно)"
+    },
+    {
+     "original":"rather",
+     "translate":"довольно (в негативном ключе - довольно трудно)"
+    },
+    {
+     "original":"loud",
+     "translate":"громкий"
+    },
+    {
+     "original":"sick",
+     "translate":"больнеть (болезнь)"
+    },
+    {
+     "original":"illness",
+     "translate":"болезнь"
+    },
+    {
+     "original":"worried",
+     "translate":"взволнованный"
+    },
+    {
+     "original":"sad",
+     "translate":"грусть"
+    },
+    {
+     "original":"upset",
+     "translate":"быть расстроянным (настроение)"
+    },
+    {
+     "original":"disappointed",
+     "translate":"разочарован"
+    },
+    {
+     "original":"clear",
+     "translate":"ясно (это ясно)"
+    },
+    {
+     "original":"explanation",
+     "translate":"объяснение"
+    },
+    {
+     "original":"sweet",
+     "translate":"сладости"
+    },
+    {
+     "original":"especially",
+     "translate":"специально (для тебя)"
+    },
+    {
+     "original":"effect",
+     "translate":"влияние"
+    },
+    {
+     "original":"worse",
+     "translate":"хуже"
+    },
+    {
+     "original":"realize",
+     "translate":"осознавать"
+    },
+    {
+     "original":"afraid",
+     "translate":"бояться"
+    },
+    {
+     "original":"unless",
+     "translate":"до тех пор пока"
+    },
+    {
+     "original":"opposite",
+     "translate":"противоположный, наоборот"
+    },
+    {
+     "original":"male",
+     "translate":"мужской, мужская"
+    },
+    {
+     "original":"loudly",
+     "translate":"громко"
+    },
+    {
+     "original":"quickly",
+     "translate":"быстро"
+    },
+    {
+     "original":"certainly OR of course",
+     "translate":"конечно"
+    },
+    {
+     "original":"relative",
+     "translate":"родственник"
+    },
+    {
+     "original":"relation",
+     "translate":"отношения"
+    },
+    {
+     "original":"wish",
+     "translate":"желание"
+    },
+    {
+     "original":"wished",
+     "translate":"пожелать"
+    },
+    {
+     "original":"obviously",
+     "translate":"очевидно"
+    },
+    {
+     "original":"action",
+     "translate":"дело, поступок"
+    },
+    {
+     "original":"act",
+     "translate":"действовать"
+    },
+    {
+     "original":"immediately",
+     "translate":"немедлянно"
+    },
+    {
+     "original":"season",
+     "translate":"время года"
+    },
+    {
+     "original":"spring",
+     "translate":"весна"
+    },
+    {
+     "original":"autumn",
+     "translate":"осень"
+    },
+    {
+     "original":"is comming",
+     "translate":"наступать"
+    },
+    {
+     "original":"tax",
+     "translate":"налог"
+    },
+    {
+     "original":"acquaintance",
+     "translate":"знакомый"
+    },
+    {
+     "original":"selfeducation",
+     "translate":"самообразование"
+    },
+    {
+     "original":"base",
+     "translate":"основа"
+    },
+    {
+     "original":"based",
+     "translate":"основоваться"
+    },
+    {
+     "original":"court",
+     "translate":"суд"
+    },
+    {
+     "original":"produce",
+     "translate":"производить"
+    },
+    {
+     "original":"advise",
+     "translate":"совет"
+    },
+    {
+     "original":"piece",
+     "translate":"кусочек"
+    },
+    {
+     "original":"land",
+     "translate":"земля (кусок земли)"
+    },
+    {
+     "original":"recent",
+     "translate":"недавнее"
+    },
+    {
+     "original":"discovery",
+     "translate":"открытие"
+    },
+    {
+     "original":"lately",
+     "translate":"последнее время"
+    },
+    {
+     "original":"describe",
+     "translate":"описывать"
+    },
+    {
+     "original":"appearance",
+     "translate":"внешность"
+    },
+    {
+     "original":"refusal",
+     "translate":"отказываться"
+    },
+    {
+     "original":"wall",
+     "translate":"стена"
+    },
+    {
+     "original":"polite",
+     "translate":"вежливый"
+    },
+    {
+     "original":"patient",
+     "translate":"терпеливый"
+    },
+    {
+     "original":"employee",
+     "translate":"работник"
+    },
+    {
+     "original":"employer",
+     "translate":"работодатель"
+    },
+    {
+     "original":"cartain",
+     "translate":"определенно, уверенно"
+    },
+    {
+     "original":"corner",
+     "translate":"угол (не математика)"
+    },
+    {
+     "original":"north",
+     "translate":"север"
+    },
+    {
+     "original":"south",
+     "translate":"юг"
+    },
+    {
+     "original":"west",
+     "translate":"запад"
+    },
+    {
+     "original":"east",
+     "translate":"восток"
+    },
+    {
+     "original":"northern",
+     "translate":"северный"
+    },
+    {
+     "original":"admire",
+     "translate":"восхищаться"
+    },
+    {
+     "original":"catch",
+     "translate":"ловить"
+    },
+    {
+     "original":"stairs",
+     "translate":"ступеньки, лестница"
+    },
+    {
+     "original":"sort",
+     "translate":"вид, сорт"
+    },
+    {
+     "original":"type",
+     "translate":"печатать"
+    },
+    {
+     "original":"kindergarten",
+     "translate":"детский сад"
+    },
+    {
+     "original":"attention",
+     "translate":"внимание"
+    },
+    {
+     "original":"attract",
+     "translate":"привлекло"
+    },
+    {
+     "original":"immediately",
+     "translate":"сразу же"
+    },
+    {
+     "original":"steal",
+     "translate":"красть"
+    },
+    {
+     "original":"jewelry",
+     "translate":"ювелирные украшения"
+    },
+    {
+     "original":"century",
+     "translate":"век"
+    },
+    {
+     "original":"available",
+     "translate":"доступный"
+    },
+    {
+     "original":"opportunity OR possibility",
+     "translate":"возможность"
+    },
+    {
+     "original":"unique",
+     "translate":"уникальный"
+    },
+    {
+     "original":"condition",
+     "translate":"условия"
+    },
+    {
+     "original":"useful",
+     "translate":"полезный"
+    },
+    {
+     "original":"motherland",
+     "translate":"родина"
+    },
+    {
+     "original":"per",
+     "translate":"в (30 км в час)"
+    },
+    {
+     "original":"weight",
+     "translate":"вес"
+    },
+    {
+     "original":"below",
+     "translate":"ниже"
+    },
+    {
+     "original":"advantage",
+     "translate":"преимущество"
+    },
+    {
+     "original":"dissadvantage",
+     "translate":"недостаток"
+    },
+    {
+     "original":"rumors",
+     "translate":"слухи"
+    },
+    {
+     "original":"bring",
+     "translate":"приносить"
+    },
+    {
+     "original":"according",
+     "translate":"в соответствии"
+    },
+    {
+     "original":"preparation",
+     "translate":"подготовка"
+    },
+    {
+     "original":"matter",
+     "translate":"дело, предмет разговора,сущность"
+    },
+    {
+     "original":"way",
+     "translate":"способ"
+    },
+    {
+     "original":"means",
+     "translate":"значит (єто значит)"
+    },
+    {
+     "original":"assessment",
+     "translate":"оценка, суждение"
+    },
+    {
+     "original":"perhaps",
+     "translate":"возможно"
+    },
+    {
+     "original":"advantage",
+     "translate":"преимущество"
+    },
+    {
+     "original":"disadvantage",
+     "translate":"недостаток"
+    },
+    {
+     "original":"private",
+     "translate":"приватный"
+    },
+    {
+     "original":"territory - територия"
+    },
+    {
+     "original":"behave",
+     "translate":"вести себя"
+    },
+    {
+     "original":"behavior",
+     "translate":"поведение"
+    },
+    {
+     "original":"strange",
+     "translate":"странный, чужой, незнакомец, удивительный, чуждый"
+    },
+    {
+     "original":"throw",
+     "translate":"бросать"
+    },
+    {
+     "original":"fill",
+     "translate":"заполнать (например проруски)"
+    },
+    {
+     "original":"gaps",
+     "translate":"пропуски"
+    },
+    {
+     "original":"colorful",
+     "translate":"красочный"
+    },
+    {
+     "original":"grade OR mark",
+     "translate":"оценка"
+    },
+    {
+     "original":"requirements",
+     "translate":"требования"
+    },
+    {
+     "original":"admire",
+     "translate":"восхищатся"
+    },
+    {
+     "original":"dirty",
+     "translate":"грязный"
+    },
+    {
+     "original":"guilty",
+     "translate":"виновен"
+    },
+    {
+     "original":"innocent",
+     "translate":"не виновен"
+    },
+    {
+     "original":"suffer",
+     "translate":"страдают"
+    },
+    {
+     "original":"fat",
+     "translate":"жирный"
+    },
+    {
+     "original":"thin",
+     "translate":"тонкий"
+    },
+    {
+     "original":"thick",
+     "translate":"толстый"
+    },
+    {
+     "original":"slim",
+     "translate":"стройная"
+    },
+    {
+     "original":"fit",
+     "translate":"подходить (ботинки подходят мне)"
+    },
+    {
+     "original":"income",
+     "translate":"доход"
+    },
+    {
+     "original":"profit",
+     "translate":"прибыль"
+    },
+    {
+     "original":"loss",
+     "translate":"потеря, убыток"
+    },
+    {
+     "original":"teenager",
+     "translate":"подросток"
+    },
+    {
+     "original":"hard-working",
+     "translate":"трудолюбивый"
+    },
+    {
+     "original":"lazy",
+     "translate":"ленивый"
+    },
+    {
+     "original":"permit",
+     "translate":"разрешать"
+    },
+    {
+     "original":"forbid",
+     "translate":"запрещать"
+    },
+    {
+     "original":"ancient",
+     "translate":"старинный"
+    },
+    {
+     "original":"modern",
+     "translate":"современный"
+    },
+    {
+     "original":"defend",
+     "translate":"защищать"
+    },
+    {
+     "original":"ugly",
+     "translate":"не красивый, уродливый"
+    },
+    {
+     "original":"bitter",
+     "translate":"горький"
+    },
+    {
+     "original":"prefer",
+     "translate":"предпочитать"
+    },
+    {
+     "original":"exciting",
+     "translate":"волнующий"
+    },
+    {
+     "original":"cheap",
+     "translate":"дешёвый"
+    },
+    {
+     "original":"expensive",
+     "translate":"дорогой"
+    },
+    {
+     "original":"careful",
+     "translate":"осторожный"
+    },
+    {
+     "original":"laugh",
+     "translate":"смеяться"
+    },
+    {
+     "original":"entrance",
+     "translate":"вход"
+    },
+    {
+     "original":"native",
+     "translate":"родной"
+    },
+    {
+     "original":"native speaker",
+     "translate":"носитель языка"
+    },
+    {
+     "original":"educated",
+     "translate":"образованый"
+    },
+    {
+     "original":"wide",
+     "translate":"широкий (предмет)"
+    },
+    {
+     "original":"narrow",
+     "translate":"узкий"
+    },
+    {
+     "original":"broad",
+     "translate":"широкий (плечи)"
+    },
+    {
+     "original":"shoulder",
+     "translate":"плечо"
+    },
+    {
+     "original":"hurt",
+     "translate":"повредил (немного)"
+    },
+    {
+     "original":"injure",
+     "translate":"повредил (нормально)"
+    },
+    {
+     "original":"wet",
+     "translate":"мокрый"
+    },
+    {
+     "original":"dry",
+     "translate":"сухой"
+    },
+    {
+     "original":"empty",
+     "translate":"пустой"
+    },
+    {
+     "original":"strange",
+     "translate":"странно"
+    },
+    {
+     "original":"seems",
+     "translate":"кажеться"
+    },
+    {
+     "original":"stranger",
+     "translate":"незнакомец"
+    },
+    {
+     "original":"common OR widespread",
+     "translate":"распостранённый"
+    },
+    {
+     "original":"belief",
+     "translate":"убеждение"
+    },
+    {
+     "original":"opposite",
+     "translate":"противоположный"
+    },
+    {
+     "original":"similar",
+     "translate":"схожий, похожий"
+    },
+    {
+     "original":"healthy",
+     "translate":"здоровый"
+    },
+    {
+     "original":"unhealthy",
+     "translate":"не здоровый (вредно для здоровья)"
+    },
+    {
+     "original":"foolish",
+     "translate":"дурацкий, глупый"
+    },
+    {
+     "original":"smart",
+     "translate":"умный"
+    },
+    {
+     "original":"cruel",
+     "translate":"жестокий"
+    },
+    {
+     "original":"rare OR uncommon",
+     "translate":"редкий"
+    },
+    {
+     "original":"rarely OR seldom",
+     "translate":"редко"
+    },
+    {
+     "original":"fortunately OR luckily",
+     "translate":"к счастью"
+    },
+    {
+     "original":"unfortunately OR unluckily",
+     "translate":"к несчастью"
+    },
+    {
+     "original":"heroic",
+     "translate":"героический"
+    },
+    {
+     "original":"honest",
+     "translate":"честный"
+    },
+    {
+     "original":"honestly",
+     "translate":"честно"
+    },
+    {
+     "original":"increase",
+     "translate":"увеличивать"
+    },
+    {
+     "original":"vocabulary",
+     "translate":"словарный запас"
+    },
+    {
+     "original":"decrease",
+     "translate":"уменьшить"
+    },
+    {
+     "original":"dicided",
+     "translate":"решили"
+    },
+    {
+     "original":"rude",
+     "translate":"грубый"
+    },
+    {
+     "original":"impolite",
+     "translate":"не вежливый"
+    },
+    {
+     "original":"singular",
+     "translate":"единственное число"
+    },
+    {
+     "original":"plural",
+     "translate":"множественное число"
+    },
+    {
+     "original":"exception",
+     "translate":"исключение"
+    },
+    {
+     "original":"useful",
+     "translate":"полезный"
+    },
+    {
+     "original":"useless",
+     "translate":"безполезный"
+    },
+    {
+     "original":"careless",
+     "translate":"невнимательный, беззаботный"
+    },
+    {
+     "original":"peace",
+     "translate":"мир (спокойствие)"
+    },
+    {
+     "original":"necessary",
+     "translate":"необходимо"
+    },
+    {
+     "original":"unnecessary",
+     "translate":"не нужный, лишний"
+    },
+    {
+     "original":"formal",
+     "translate":"формальный (стиль)"
+    },
+    {
+     "original":"informal",
+     "translate":"не формальный (стиль)"
+    },
+    {
+     "original":"ineffective",
+     "translate":"не эффективный"
+    },
+    {
+     "original":"satisfied",
+     "translate":"удовлетворен"
+    },
+    {
+     "original":"dissatisfied",
+     "translate":"не удовлетворен"
+    },
+    {
+     "original":"satisfaction",
+     "translate":"удовлетворенность"
+    },
+    {
+     "original":"dissatisfaction",
+     "translate":"не удовлетворенность"
+    },
+    {
+     "original":"inspired",
+     "translate":"вдохновленный"
+    },
+    {
+     "original":"cuz",
+     "translate":"потому что"
+    },
+    {
+     "original":"goal",
+     "translate":"цель"
+    },
+    {
+     "original":"resolution",
+     "translate":"решимость, решение, разрешение"
+    },
+    {
+     "original":"even",
+     "translate":"даже"
+    },
+    {
+     "original":"huge",
+     "translate":"огромный, громадный"
+    },
+    {
+     "original":"inspiration",
+     "translate":"вдохновление"
+    },
+    {
+     "original":"i`m gonna try",
+     "translate":"я собираюсь попробовать"
+    },
+    {
+     "original":"scam",
+     "translate":"мошенничество"
+    },
+    {
+     "original":"recognized",
+     "translate":"признанный"
+    },
+    {
+     "original":"lean",
+     "translate":"худой"
+    },
+    {
+     "original":"fit",
+     "translate":"соответствовать"
+    },
+    {
+     "original":"agile",
+     "translate":"проворный, подвижный, гибкий"
+    },
+    {
+     "original":"while",
+     "translate":"пока (в то время какб тогда как)"
+    },
+    {
+     "original":"flex",
+     "translate":"сгибать"
+    },
+    {
+     "original":"flexible",
+     "translate":"гибкий"
+    },
+    {
+     "original":"definitely",
+     "translate":"определенно"
+    },
+    {
+     "original":"kept up",
+     "translate":"постоянно, поддерживать, продолжать, соблюдать"
+    },
+    {
+     "original":"habit",
+     "translate":"привычка"
+    },
+    {
+     "original":"no matter",
+     "translate":"не важно, безразлично, все равно"
+    },
+    {
+     "original":"whole",
+     "translate":"весь, целый"
+    },
+    {
+     "original":"mark",
+     "translate":"бал, оценка"
+    },
+    {
+     "original":"since",
+     "translate":"поскольку"
+    },
+    {
+     "original":"skinny",
+     "translate":"тощий"
+    },
+    {
+     "original":"brag",
+     "translate":"хвастаться"
+    },
+    {
+     "original":"those",
+     "translate":"те"
+    },
+    {
+     "original":"drag",
+     "translate":"тащить, тянуть"
+    },
+    {
+     "original":"dragging",
+     "translate":"перетаскивание"
+    },
+    {
+     "original":"blizzard",
+     "translate":"снежная буря, метель, буран"
+    },
+    {
+     "original":"pull",
+     "translate":"тянуть, вытащить, потянуть"
+    },
+    {
+     "original":"cracking up",
+     "translate":"взламывание"
+    },
+    {
+     "original":"crack",
+     "translate":"трещина, щель, треск"
+    },
+    {
+     "original":"feel free",
+     "translate":"не стесняйтесь"
+    },
+    {
+     "original":"gonna",
+     "translate":"собираюсь"
+    },
+    {
+     "original":"whole",
+     "translate":"целый, весь"
+    },
+    {
+     "original":"additive",
+     "translate":"добавка"
+    },
+    {
+     "original":"stick around",
+     "translate":"ошиваться, слоняться по близости"
+    },
+    {
+     "original":"amount",
+     "translate":"количество, сумма"
+    },
+    {
+     "original":"dekicious",
+     "translate":"восхитительный, очень вкусный, приятный"
+    },
+    {
+     "original":"plant",
+     "translate":"растение"
+    },
+    {
+     "original":"plant-based",
+     "translate":"на ростительной основе"
+    },
+    {
+     "original":"oat",
+     "translate":"овсяные хлопья"
+    },
+    {
+     "original":"carbs",
+     "translate":"углеводы"
+    },
+    {
+     "original":"otherwise",
+     "translate":"иначе, в противном случае, иным образом"
+    },
+    {
+     "original":"source",
+     "translate":"источник"
+    },
+    {
+     "original":"cramp",
+     "translate":"судорга"
+    },
+    {
+     "original":"cramping",
+     "translate":"спазмы"
+    },
+    {
+     "original":"threw",
+     "translate":"бросать, кинуть, забросить"
+    },
+    {
+     "original":"sweeten",
+     "translate":"подслащивать"
+    },
+    {
+     "original":"smooth",
+     "translate":"гладкий, плавный, ровный"
+    },
+    {
+     "original":"effort",
+     "translate":"усилие, попытка"
+    },
+    {
+     "original":"shouldn`t",
+     "translate":"не должен"
+    },
+    {
+     "original":"tablespoon",
+     "translate":"столовая ложка"
+    },
+    {
+     "original":"crunchy",
+     "translate":"хрустящий"
+    },
+    {
+     "original":"cheap",
+     "translate":"дешевый, дешево"
+    },
+    {
+     "original":"straight-up",
+     "translate":"прямолинейный"
+    },
+    {
+     "original":"butter",
+     "translate":"масло"
+    },
+    {
+     "original":"instead",
+     "translate":"вместо, взамен"
+    },
+    {
+     "original":"meal",
+     "translate":"еда, мука"
+    },
+    {
+     "original":"obviously",
+     "translate":"очевидно, ясно, по-видимому"
+    },
+    {
+     "original":"earlier",
+     "translate":"ранее, раньше"
+    },
+    {
+     "original":"hum",
+     "translate":"ветчина"
+    },
+    {
+     "original":"cereal",
+     "translate":"каша"
+    },
+    {
+     "original":"literally",
+     "translate":"буквально"
+    },
+    {
+     "original":"feeding",
+     "translate":"кормление, питание"
+    },
+    {
+     "original":"divided",
+     "translate":"разделенный"
+    },
+    {
+     "original":"since",
+     "translate":"поскольку"
+    },
+    {
+     "original":"halfway",
+     "translate":"наполовину, на полпути"
+    },
+    {
+     "original":"essential",
+     "translate":"существенный, основной, необходимый"
+    },
+    {
+     "original":"tend",
+     "translate":"иметь тенденцию"
+    },
+    {
+     "original":"whatever",
+     "translate":"что бы ни, какой бы ни, любой"
+    },
+    {
+     "original":"wise",
+     "translate":"мудрый"
+    },
+    {
+     "original":"asleep",
+     "translate":"спящий"
+    },
+    {
+     "original":"we were",
+     "translate":"мы были"
+    },
+    {
+     "original":"wake",
+     "translate":"будить"
+    },
+    {
+     "original":"safe",
+     "translate":"безопасный"
+    },
+    {
+     "original":"worst",
+     "translate":"худший"
+    },
+    {
+     "original":"imaginable",
+     "translate":"вообразимый, воображаемый (что можно представить)"
+    },
+    {
+     "original":"growing",
+     "translate":"растущий"
+    },
+    {
+     "original":"far",
+     "translate":"далеко"
+    },
+    {
+     "original":"until",
+     "translate":"до того как"
+    },
+    {
+     "original":"here he comes",
+     "translate":"вот он идет"
+    },
+    {
+     "original":"burn",
+     "translate":"гореть, ожог, сжигать"
+    },
+    {
+     "original":"aunt",
+     "translate":"тетя"
+    },
+    {
+     "original":"hurry",
+     "translate":"торопиться, торопить"
+    },
+    {
+     "original":"uncle",
+     "translate":"дядя"
+    },
+    {
+     "original":"darling",
+     "translate":"дорогой, милый, любимый"
+    },
+    {
+     "original":"quite",
+     "translate":"довольно, вполне, совершенно, совсем, очень, полностью"
+    },
+    {
+     "original":"a bit",
+     "translate":"немного"
+    },
+    {
+     "original":"forward",
+     "translate":"вперед, дальше"
+    },
+    {
+     "original":"looking forward",
+     "translate":"с нетерпением жду"
+    },
+    {
+     "original":"boring",
+     "translate":"скучный"
+    },
+    {
+     "original":"like",
+     "translate":"нравиться, подобно, похоже, вроде, словно, нравиться, любить"
+    },
+    {
+     "original":"day after day",
+     "translate":"день за днем"
+    },
+    {
+     "original":"lying",
+     "translate":"врущий, лощь, лежащий"
+    },
+    {
+     "original":"press",
+     "translate":"пресса, нажимать, прижиматься, пресс"
+    },
+    {
+     "original":"ugly",
+     "translate":"уродливый, противный, неприятный, опасный, скверный"
+    },
+    {
+     "original":"mean",
+     "translate":"иметь в виду"
+    },
+    {
+     "original":"sweetheart",
+     "translate":"дорогой, дорогая, возлюбленный"
+    },
+    {
+     "original":"swear",
+     "translate":"клясться, ругаться, присягать"
+    },
+    {
+     "original":"then",
+     "translate":"тогда, потом, затем"
+    },
+    {
+     "original":"such",
+     "translate":"такие, такой"
+    },
+    {
+     "original":"caveat",
+     "translate":"предостережение"
+    },
+    {
+     "original":"proud",
+     "translate":"гордый"
+    },
+    {
+     "original":"where you belong",
+     "translate":"там где тебе место"
+    },
+    {
+     "original":"belong",
+     "translate":"принадлежать, относиться"
+    },
+    {
+     "original":"fit",
+     "translate":"соответствовать"
+    },
+    {
+     "original":"enough",
+     "translate":"достаточно (достаточно хорошо)"
+    },
+    {
+     "original":"blasted",
+     "translate":"проклятый (никаких проклятых писем)"
+    },
+    {
+     "original":"mad",
+     "translate":"без ума, безумный, сумасшедший, бешеный"
+    },
+    {
+     "original":"wish",
+     "translate":"желание, пожелание, желать"
+    },
+    {
+     "original":"at once",
+     "translate":"сразу, немедлянно, тотчас ИЛИ вдруг, однажды"
+    },
+    {
+     "original":"demand",
+     "translate":"требовать"
+    },
+    {
+     "original":"that",
+     "translate":"что"
+    },
+    {
+     "original":"breaking and entering",
+     "translate":"взлом с проникновением"
+    },
+    {
+     "original":"dry up",
+     "translate":"замолчите, перестаньте"
+    },
+    {
+     "original":"prune",
+     "translate":"чернослив, ЗАНУДА"
+    },
+    {
+     "original":"since",
+     "translate":"с, после, со времени, поскольку, с тех по, так как"
+    },
+    {
+     "original":"expect",
+     "translate":"ожидать, рассчитывать, ждать, надеяться"
+    },
+    {
+     "original":"particularly",
+     "translate":"особенно, в частности / особенности, очень"
+    },
+    {
+     "original":"might",
+     "translate":"мощь, могущество, сила, энергия"
+    },
+    {
+     "original":"imagine",
+     "translate":"представить"
+    },
+    {
+     "original":"taste",
+     "translate":"вкус"
+    },
+    {
+     "original":"just the same",
+     "translate":"все равно"
+    },
+    {
+     "original":"bake",
+     "translate":"печи, испечь выпекать, запекать? выпечка"
+    },
+    {
+     "original":"turn",
+     "translate":"повернуть, свернуть, перемена"
+    },
+    {
+     "original":"somepoint",
+     "translate":"в какой-то момент"
+    },
+    {
+     "original":"ground",
+     "translate":"земля, територия, основание, почва, грунт, основа"
+    },
+    {
+     "original":"blimey",
+     "translate":"вот это да, чтоб мне провалиться!, иди ты!"
+    },
+    {
+     "original":"wonder",
+     "translate":"удивляться, чудо, изумление"
+    },
+    {
+     "original":"thumping",
+     "translate":"чертовски (хороший)"
+    },
+    {
+     "original":"wager",
+     "translate":"пари, ставка, держать пари, рисковать, биться об заклад"
+    },
+    {
+     "original":"angry",
+     "translate":"сердитый, гневный, грозный, зловещий"
+    },
+    {
+     "original":"scared",
+     "translate":"испуганный"
+    },
+    {
+     "original":"pleased",
+     "translate":"рады (мы рады), довольный"
+    },
+    {
+     "original":"imperfection",
+     "translate":"недостаток, несовершенство"
+    },
+    {
+     "original":"witchcraft",
+     "translate":"колдовство, черная магия"
+    },
+    {
+     "original":"swore",
+     "translate":"поклялся, поклявшийся"
+    },
+    {
+     "original":"took",
+     "translate":"взять"
+    },
+    {
+     "original":"rubbish",
+     "translate":"мусор, чушь, ерунда, отстой, фигня"
+    },
+    {
+     "original":"all along",
+     "translate":"все это время"
+    },
+    {
+     "original":"proud",
+     "translate":"гордый"
+    },
+    {
+     "original":"witch",
+     "translate":"ведьма"
+    },
+    {
+     "original":"freak",
+     "translate":"ненормальный, урод, нарокоман,чудак, помешанный"
+    },
+    {
+     "original":"abnormal",
+     "translate":"ненормально"
+    },
+    {
+     "original":"if you please",
+     "translate":"если вы позволете разрешите, с вашего позволения"
+    },
+    {
+     "original":"blown up",
+     "translate":"взорвать, взрываться, выходить из себя, расстраивать, ругать"
+    },
+    {
+     "original":"outrage",
+     "translate":"возмущение, произвол, безобразие, надругательство, оскорбление, беззаконие"
+    },
+    {
+     "original":"suppose",
+     "translate":"предполагать, допускать, думать, гипотеза"
+    },
+    {
+     "original":"folk",
+     "translate":"народ, люди, родня, народный"
+    },
+    {
+     "original":"ever seen",
+     "translate":"когда-либо видел"
+    },
+    {
+     "original":"under",
+     "translate":"под, ниже, внизу, меньше"
+    },
+    {
+     "original":"headmaster",
+     "translate":"директор, старший мастер"
+    },
+    {
+     "original":"crackpot",
+     "translate":"чокнутый, ненормальный, сумасшедший, помешанный"
+    },
+    {
+     "original":"fool",
+     "translate":"дурак, глупец, шут, глупый"
+    },
+    {
+     "original":"insult",
+     "translate":"оскорблять, обижать, инсульт"
+    },
+    {
+     "original":"fornt of",
+     "translate":"перед (передо мной)"
+    },
+    {
+     "original":"um",
+     "translate":"ммм :)"
+    },
+    {
+     "original":"appreciate",
+     "translate":"ценить, оценивать, понимать"
+    },
+    {
+     "original":"strictly",
+     "translate":"строго"
+    },
+    {
+     "original":"allow",
+     "translate":"позволять, допускать, разрешать, давать"
+    },
+    {
+     "original":"behind",
+     "translate":"за, позади, сзади, после"
+    },
+    {
+     "original":"schedule",
+     "translate":"рассписание, график"
+    },
+    {
+     "original":"best",
+     "translate":"лучший, лучше всего, вполне, правильно"
+    },
+    {
+     "original":"unless",
+     "translate":"пока не, если не, за исключением, кроме"
+    },
+    {
+     "original":"rather",
+     "translate":"скорее, довольно, вернее, лучше, слугка, правильнее"
+    },
+    {
+     "original":"robes",
+     "translate":"халаты"
+    }
   ]
 }

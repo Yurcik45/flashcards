@@ -2,9 +2,32 @@
   display: flex
   flex-direction: column
   align-items: center
-  justify-content: center
-  height: 100vh
-  width: 100vw
-  overflow: hidden
+  justify-content: space-around
+  // height: 100vh
+  // width: 100vw
+  // overflow: hidden
   // background-color: #363945
-  background-color: #6c5b7c
+  // background-color: #6c5b7c
+
+// scrollbar customization
+/* width */
+::-webkit-scrollbar
+  min-height: 1px
+  height: 1px
+  max-height: 1px
+  min-width: 3px
+  width: 3px
+  max-width: 3px
+/* Track */
+::-webkit-scrollbar-track
+  background: #f1f1f1
+  // background: #000
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: #cacaca
+  // background: red
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  // background: #838383
+  background: transparent
+  // background: pink
