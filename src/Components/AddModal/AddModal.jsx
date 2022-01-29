@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ClickAwayListener from 'react-click-away-listener';
-import './AddModal.sass';
+import './AddModal.css';
 
 const AddModal = ({showModal, setShowModal, closeModal}) => {
   console.log('modal :', showModal);

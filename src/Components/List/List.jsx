@@ -1,4 +1,4 @@
-import "./List.sass";
+import "./List.css";
 
 const List = () => {
   return (

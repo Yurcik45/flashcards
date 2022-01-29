@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import CardContainer from "./Components/CardContainer/CardContainer";
-import "./App.sass";
+import "./App.css";
 import List from "./Components/List/List";
 import Home from "./Pages/Home/Home";
 

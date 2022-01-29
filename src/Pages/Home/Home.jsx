@@ -1,4 +1,4 @@
-import './Home.sass';
+import './Home.css';
 import axios from 'axios';
 import { useState } from 'react';
 import Header from '../../Components/Header/Header';

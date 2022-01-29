@@ -1,4 +1,4 @@
-import "./Card.sass";
+import "./Card.css";
 
 const Card = ({ original, translate }) => {
   return (

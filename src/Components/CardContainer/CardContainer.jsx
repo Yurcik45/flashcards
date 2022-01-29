@@ -1,4 +1,4 @@
-import "./CardContainer.sass";
+import "./CardContainer.css";
 import Card from "../Card/Card";
 import { useState } from "react";
 
