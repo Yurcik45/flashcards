@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import CardContainer from "./Components/CardContainer/CardContainer";
 import "./App.css";
@@ -7,6 +7,8 @@ import Home from "./Pages/Home/Home";
 
 const App = () => {
   const [cardsData, setCardData] = useState(null);
+  const [userName, setUserName] = useState('')
+  const [showModal, setShowModal] = useState(false);
   const getcardsData = async () => {
     try {
       let base = await axios.get("cards.json", { crossDomain: true });
@@ -15,31 +17,24 @@ const App = () => {
       console.log(e);
     }
   };
-  // const DBSetter = (path, value) => {
-  //   firebase.database().ref(path).set(value)
-  //       .then(r => dbRefreshHandler(Math.random()));
-  // };
   useEffect(() => {
+    const name = localStorage.getItem('name');
+    console.log('ls name :', name);
+    if (name) setUserName(name)
+      else setShowModal(true, {type: 'name'});
+      console.log('modal state :', showModal);
     getcardsData().then(() => console.log());
   }, []);
-  // const [data, dataHandler] = useState(0);
-  // const [dbRefresh, dbRefreshHandler] = useState(0);
-
-  // useEffect(() => {
-  //   // console.log('fetch worked')
-  //   // fetch("https://flashcards-f6c98-default-rtdb.firebaseio.com/.json")
-  //   //   .then((response) => response.json())
-  //   //   .then((json) => {
-  //   //     dataHandler(json);
-  //   //   });
-  //   // axios.get("https://flashcards-f6c98-default-rtdb.firebaseio.com/.json")
-  //     // .then(res => dataHandler(res.data));
-  //     console.log('username', localStorage.getItem('name'))
-  //   }, []);
-  // console.log('fb data', data);
+  console.log('user name :', userName);
   return (
     <div className="App">
-      <Home cardsData={cardsData} />
+      <Home
+        cardsData={cardsData}
+        userName={userName}
+        setUserName={setUserName}
+        showModal={showModal}
+        setShowModal={setShowModal}
+      />
     </div>
   );
 };

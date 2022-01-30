@@ -1,10 +1,10 @@
 import './Header.css';
 
-const Header = () => {
+const Header = ({ userName, setShowModal }) => {
   return (
     <div className="Header">
-      <div className="User">
-        user name
+      <div onClick={() => setShowModal({status: true, item: 'name'})} className="User">
+        {userName && userName}
       </div>
     </div>
   )

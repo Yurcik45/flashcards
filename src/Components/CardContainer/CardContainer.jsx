@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const CardContainer = ({ cardsData }) => {
   const [scroll, setScroll] = useState(0);
-  console.log("cards data :", cardsData);
   const arrayLength = cardsData?.flashcards && cardsData.flashcards.length;
   const scrollLeft = () => {
     if (scroll > 0) {
@@ -17,7 +16,6 @@ const CardContainer = ({ cardsData }) => {
       setScroll(scroll + 1);
     }
   };
-  console.log("scroll counter :", scroll);
   return (
     <div className="CardContainer">
       <button className="scrollButton" onClick={scrollLeft}>
