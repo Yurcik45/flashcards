@@ -6791,9 +6791,16 @@
         "translate": "человек"
       }
     ],
-    "own_words": {
-      "test": "test"
-    },
+    "own_words": [
+      {
+        "original": "person",
+        "translate": "человек"
+      },
+      {
+        "original": "person1",
+        "translate": "человек1"
+      }
+    ],
     "unknown_words": [
       {
         "original": "them",
@@ -6836,6 +6843,16 @@
       {
         "original": "them",
         "translate": "им"
+      }
+    ],
+    "own_words": [
+      {
+        "original": "person",
+        "translate": "человек"
+      },
+      {
+        "original": "person1",
+        "translate": "человек1"
       }
     ]
   }

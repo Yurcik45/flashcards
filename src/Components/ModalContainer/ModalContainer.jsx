@@ -4,7 +4,6 @@ import AddWord from "../AddWord/AddWord";
 import "./ModalContainer.css";
 
 const ModalContainer = ({ showModal, setShowModal, setUserName }) => {
-  console.log('show modal', showModal);
   return (
     <div className="ModalContainer">
       {

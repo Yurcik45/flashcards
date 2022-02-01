@@ -5,14 +5,16 @@ import Header from "../../Components/Header/Header";
 import List from "../../Components/List/List";
 import CardContainer from "../../Components/CardContainer/CardContainer";
 import ModalContainer from "../../Components/ModalContainer/ModalContainer";
+import CategoryNav from "../../Components/CategoryNav/CategoryNav";
 
-const Home = ({ cardsData, userName, setUserName, showModal, setShowModal }) => {
+const Home = ({ cardsData, userName, setUserName, showModal, setShowModal, categories, currentCategory, setCurrentCategory }) => {
   return (
     <div className="Home">
       <Header
         userName={userName}
         setShowModal={setShowModal}
       />
+      <CategoryNav userName={userName} setCurrentCategory={setCurrentCategory} categories={categories} currentCategory={currentCategory} />
       <CardContainer cardsData={cardsData} />
       {/* <List /> */}
       <div onClick={() => setShowModal({status: true, item: 'word'})} className="openmodal">
