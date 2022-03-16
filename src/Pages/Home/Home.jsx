@@ -1,35 +1,138 @@
-import "./Home.css";
+import "./Home.sass";
 import axios from "axios";
 import { useState } from "react";
-import Header from "../../Components/Header/Header";
-import List from "../../Components/List/List";
 import CardContainer from "../../Components/CardContainer/CardContainer";
 import ModalContainer from "../../Components/ModalContainer/ModalContainer";
-import CategoryNav from "../../Components/CategoryNav/CategoryNav";
+import WordsList from "../../Components/WordsList/WordsList";
 
-const Home = ({ cardsData, userName, setUserName, showModal, setShowModal, categories, currentCategory, setCurrentCategory }) => {
+const Home = ({ cardsData }) => {
+  const [viewWordsList, setViewWordsList] = useState(false);
+  const temp = [
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefgregrefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefregregregwfef",
+    "fwefefwfef",
+    "efefwfef",
+    "fwefefwfef",
+    "fwefregregregreggrgregefwfef",
+    "fwefefwfef",
+    "fweefwfef",
+    "ffef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fefwfef",
+    "fwgreefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fefwfef",
+    "fwefefwfef",
+    "wefefwfef",
+    "fwefefwfef",
+    "fwefewf",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefregregrgregrgefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefgregegrgeggrgregefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fweggrggegrgfefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+    "fwefefwfef",
+  ];
   return (
     <div className="Home">
-      <Header
-        userName={userName}
-        setShowModal={setShowModal}
-      />
-      <CategoryNav userName={userName} setCurrentCategory={setCurrentCategory} categories={categories} currentCategory={currentCategory} />
       <CardContainer cardsData={cardsData} />
-      {/* <List /> */}
-      <div onClick={() => setShowModal({status: true, item: 'word'})} className="openmodal">
-        add word
-      </div>
-      <div onClick={() => setShowModal({status: true, item: 'name'})} className="openmodal">
-        add name
-      </div>
-      {showModal.status && (
+      <WordsList
+        words={temp}
+        current_word={temp[12]}
+        viewWordsList={viewWordsList}
+        setViewWordsList={setViewWordsList}
+      />
+      {/* {showModal.status && (
         <ModalContainer
           showModal={showModal}
           setShowModal={setShowModal}
           setUserName={setUserName}
         />
-      )}
+      )} */}
     </div>
   );
 };

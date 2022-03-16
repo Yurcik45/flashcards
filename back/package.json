@@ -1,0 +1,25 @@
+{
+  "name": "flashcards-backend",
+  "version": "1.0.0",
+  "description": "flashcards backend to make connection with mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nod": "nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "back",
+    "mongodb"
+  ],
+  "author": "yurcik45",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.6",
+    "nodemon": "^2.0.15"
+  }
+}

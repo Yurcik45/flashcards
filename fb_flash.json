@@ -1,5 +1,4 @@
-{
-  "all_words": [
+  [
     {
       "original": "to start a beef",
       "translate": "сориться (в простом разговорном контексте)"
@@ -6783,77 +6782,4 @@
       "original": "most people/ most of",
       "translate": "большенство"
     }
-  ],
-  "user1": {
-    "known_words": [
-      {
-        "original": "person",
-        "translate": "человек"
-      }
-    ],
-    "own_words": [
-      {
-        "original": "person",
-        "translate": "человек"
-      },
-      {
-        "original": "person1",
-        "translate": "человек1"
-      }
-    ],
-    "unknown_words": [
-      {
-        "original": "them",
-        "translate": "им"
-      }
-    ]
-  },
-  "yurcik45": {
-    "known_words": [
-      {
-        "original": "there",
-        "translate": "там"
-      },
-      {
-        "original": "often",
-        "translate": "часто"
-      },
-      {
-        "original": "remember",
-        "translate": "помнить"
-      },
-      {
-        "original": "person",
-        "translate": "человек"
-      }
-    ],
-    "unknown_words": [
-      {
-        "original": "their",
-        "translate": "их / это их проблемы"
-      },
-      {
-        "original": "our",
-        "translate": "наш"
-      },
-      {
-        "original": "this thing",
-        "translate": "эту вещь"
-      },
-      {
-        "original": "them",
-        "translate": "им"
-      }
-    ],
-    "own_words": [
-      {
-        "original": "person",
-        "translate": "человек"
-      },
-      {
-        "original": "person1",
-        "translate": "человек1"
-      }
-    ]
-  }
-}
+  ]

@@ -1,4 +1,4 @@
-import "./AddWord.css";
+import "./AddWord.sass";
 import ClickAwayListener from "react-click-away-listener";
 import { useState } from "react";
 
@@ -8,15 +8,18 @@ const AddWord = ({ setShowModal }) => {
     const name = e.target.name;
     const value = e.target.value;
     word[name] = value;
-  }
+  };
   const addWord = () => {
     if (word.original && word.translate) {
-      if ((word?.original.trim().length !== 0) && (word?.translate.trim().length !== 0)) {
+      if (
+        word?.original.trim().length !== 0 &&
+        word?.translate.trim().length !== 0
+      ) {
         word.original = word.original.trim();
         word.translate = word.translate.trim();
-      } else return alert('incorrect word')
-    } else return alert('incorrect word')
-  }
+      } else return alert("incorrect word");
+    } else return alert("incorrect word");
+  };
   return (
     <ClickAwayListener onClickAway={() => setShowModal({ status: false })}>
       <div className="AddWord">
