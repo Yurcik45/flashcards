@@ -9,8 +9,8 @@ const {infoLog, successLog, errorLog} = require("../tools/custom_logs")
 
 router.get("/", (req, res) => {
   console.log('test /api');
-  // const limit = req.query?.limit ?? 10;
-  const limit = 0;
+  const limit = req.query?.limit ?? 10;
+  // const limit = 0;
   // get initial info to front-end
   // get user
   // get general words (with limit)

@@ -14,13 +14,10 @@ const App = () => {
   const [authData] = useState({});
   const [registerData] = useState({});
   const [categories] = useState(init_categories);
-  let [notiftimeout] = useState(null);
 
   const notificationHandler = (text, type) => {
-    if (notiftimeout !== null)
-      notiftimeout.clearTimeout() && console.warn("CLEARED");
     setNotification({ active: true, text, type });
-    notiftimeout = setTimeout(() => {
+    setTimeout(() => {
       setNotification({ active: false });
     }, 3000);
   };

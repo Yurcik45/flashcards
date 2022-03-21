@@ -9,6 +9,7 @@
 // r1 - already have an account
 // l0 - login OK
 // l1 - doesn't have an account
+// l2 - incorrect login or password
 const { infoLog, successLog, errorLog } = require("../tools/custom_logs");
 const { checkUserExist, createUser } = require("../models/users");
 
@@ -20,7 +21,7 @@ const registerUser = (req, res) => {
       infoLog('already have user');
       res.send({
         code: 'r1',
-        msg: `user ${body.login} already have an account`
+        msg: `user " ${body.login} " already have an account`
       })
     } else {
       infoLog('...')
@@ -61,6 +62,11 @@ const authUser = (req, res) => {
           code: "l0",
           user: data
         });
+      } else {
+        return res.send({
+          msg: `Incorrect login or password`,
+          code: "l2",
+        })
       }
     } else {
       infoLog(`user ${body.login} doesn't have an account`);

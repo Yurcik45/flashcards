@@ -10,6 +10,8 @@ const WordsList = ({
   scroll,
   setScroll,
   notificationHandler,
+  currentWord,
+  setCurrentWord,
 }) => {
   const redux_words = useSelector((state) => state.words);
   const redux_user = useSelector((state) => state.user);
@@ -17,7 +19,6 @@ const WordsList = ({
     currentCategory === "generalWords"
       ? redux_words[currentCategory]
       : redux_user[currentCategory];
-
   const wordsLength = words.length;
   const screenWidth = window.innerWidth;
   const choseListSize = () => {
@@ -40,7 +41,11 @@ const WordsList = ({
   };
   const openWordsArea = () => {
     if (words.length > 0) return setViewWordsList(true);
-    notificationHandler("list is empty", "warning");
+    if (redux_user.login) {
+      notificationHandler("list is empty", "warning");
+    } else {
+      notificationHandler("log in firstly", "warning");
+    }
   };
   return (
     <div
@@ -62,6 +67,8 @@ const WordsList = ({
             words={words}
             current_word={words[scroll]}
             setScroll={setScroll}
+            currentWord={currentWord}
+            setCurrentWord={setCurrentWord}
           />
         </ClickAwayListener>
       ) : (

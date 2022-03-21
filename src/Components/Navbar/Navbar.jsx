@@ -1,7 +1,11 @@
 import "./Navbar.sass";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = ({ categories, currentCategory, setCurrentCategory }) => {
+  const user = useSelector((state) => state.user);
+  const loginned = user.loginned;
+  const login = user.login;
   const changeCategory = (e) => {
     const category = e.target.name;
     if (currentCategory !== category) {
@@ -46,16 +50,33 @@ const Navbar = ({ categories, currentCategory, setCurrentCategory }) => {
         </ul>
       </div>
       <div className="nav_button_container">
-        <NavLink to="/register">
-          <button type="button" className="btn btn-primary">
-            Sign in
-          </button>
-        </NavLink>
-        <NavLink to="/auth">
-          <button type="button" className="btn btn-success">
-            Log in
-          </button>
-        </NavLink>
+        {
+          loginned &&
+          <div className="nav_user">
+            {login}
+          </div>
+        }
+        {!loginned && (
+          <>
+            <NavLink to="/register">
+              <button type="button" className="btn btn-primary nav_button">
+                Sign in
+              </button>
+            </NavLink>
+            <NavLink to="/auth">
+              <button type="button" className="btn btn-success nav_button">
+                Log in
+              </button>
+            </NavLink>
+          </>
+        )}
+        {loginned && (
+          <NavLink to="/auth">
+            <button type="button" className="btn btn-danger nav_button">
+              Log out
+            </button>
+          </NavLink>
+        )}
       </div>
     </nav>
   );

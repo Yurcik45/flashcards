@@ -7,24 +7,22 @@ import WordsList from "../../Components/WordsList/WordsList";
 import { useDispatch } from "react-redux";
 import { getAllWords } from "../../redux/actions/words";
 import { getUser } from "../../redux/actions/user";
-import { useSelector } from "react-redux";
 import { useEffect } from "react";
+import { s_user } from "../../initialize";
 
 const Home = ({ currentCategory, notificationHandler }) => {
   const dispatch = useDispatch();
   const [viewWordsList, setViewWordsList] = useState(false);
   const [scroll, setScroll] = useState(0);
   const [currentWord, setCurrentWord] = useState();
-  const user = useSelector((state) => state.user);
-  const words = useSelector((state) => state.words);
-  const loginned = user.loginned;
   useEffect(() => {
-    // if (loginned)
-    //   dispatch(getUser({ login: user.login }));
-    //   dispatch(getAllWords(100));
-    // if (!loginned)
-    dispatch(getAllWords());
-  }, []);
+    if (s_user) {
+      dispatch(getUser({ login: s_user }));
+      dispatch(getAllWords());
+    } else {
+      dispatch(getAllWords(30));
+    }
+  }, [s_user]);
   return (
     <div className="Home">
       <CardContainer
@@ -39,6 +37,8 @@ const Home = ({ currentCategory, notificationHandler }) => {
         viewWordsList={viewWordsList}
         setViewWordsList={setViewWordsList}
         notificationHandler={notificationHandler}
+        currentWord={currentWord}
+        setCurrentWord={setCurrentWord}
       />
       {/* {showModal.status && (
         <ModalContainer

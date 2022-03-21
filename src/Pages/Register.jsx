@@ -1,9 +1,11 @@
 import { registrationUser } from "../redux/actions/user";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import AuthForm from "../Components/AuthForm/AuthForm";
 
 const Register = ({ registerData, notificationHandler, type }) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const registerUserInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -28,12 +30,19 @@ const Register = ({ registerData, notificationHandler, type }) => {
       return notificationHandler("Please confirm your password!", "danger");
     if (registerData.password !== registerData.password_confirm)
       return notificationHandler("Fail to compare pesswords", "danger");
-    notificationHandler("Wait a second, pleace :)", "info");
+    // notificationHandler("Wait a second, pleace :)", "info");
     const regResult = {
       login: registerData.login,
       password: registerData.password,
     };
-    dispatch(registrationUser(regResult));
+    dispatch(registrationUser(regResult, (res) => {
+      if (res.data.code === 'r0') notificationHandler(res.data.msg, 'success')
+      if (res.data.code === 'r1') notificationHandler(res.data.msg, 'warning')
+      const authTimeout = setTimeout(() => {
+        navigate('/auth')
+        authTimeout.clearTimeout();
+      }, 1000)
+    }));
   };
   return (
     <AuthForm

@@ -1,10 +1,11 @@
 import "./WordsArea.sass";
 
-const WordsArea = ({ words, current_word, setScroll }) => {
+const WordsArea = ({ words, current_word, setScroll,
+  setCurrentWord, }) => {
   const selectWord = (e) => {
     const word = e.target.textContent;
     setScroll(e.target.dataset.id);
-    console.log("selected word :", word);
+    setCurrentWord(word)
   };
   return (
     <div className="WordsArea">

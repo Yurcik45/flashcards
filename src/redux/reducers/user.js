@@ -15,7 +15,7 @@ const initialState = {
   changedWords: [],
   newWords: [],
   error_msg: "",
-  loginned: true,
+  loginned: false,
 };
 
 export default (state = initialState, action = {}) => {

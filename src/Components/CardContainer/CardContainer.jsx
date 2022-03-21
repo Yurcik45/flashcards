@@ -1,6 +1,5 @@
 import "./CardContainer.sass";
 import Card from "../Card/Card";
-import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 const CardContainer = ({ currentCategory, scroll, setScroll }) => {
@@ -12,9 +11,7 @@ const CardContainer = ({ currentCategory, scroll, setScroll }) => {
       : redux_user[currentCategory];
   const arrayLength = words && words.length;
   const scrollLeft = () => scroll > 0 && setScroll(+scroll - 1);
-  // change scroll value for user click Right
   const scrollRight = () => scroll < arrayLength - 1 && setScroll(+scroll + 1);
-  console.log("scroll", scroll);
   return (
     <div className="CardContainer">
       {words.length > 0 ? (
@@ -31,7 +28,9 @@ const CardContainer = ({ currentCategory, scroll, setScroll }) => {
           </button>
         </>
       ) : (
-        <div className="empty_cards_data">This category is empty</div>
+        <div className="empty_cards_data">
+          {redux_user.loginned ? "This category is empty, add words :)" : "This feature close for you, log in firstly"}
+        </div>
       )}
     </div>
   );

@@ -24,21 +24,18 @@ export const getUser = (user) => (dispatch) => {
     });
 };
 
-export const registrationUser = (body) => (dispatch) => {
+export const registrationUser = (body, callback) => (dispatch) => {
   if (!body.login || !body.password)
     throw new Error("Invalid login or password");
   const url = `${serv}/api/register`;
-  axios
+  const response = axios
     .post(url, body, requestConfig)
     .then((res) => {
-      dispatch({ type: REGISTER_USER_SUCCESS, payload: res.data });
+      callback(res);
     })
-    .catch((error) => {
-      dispatch({ type: REGISTER_USER_FAIL, payload: error });
-    });
 };
 
-export const authUser = (body) => (dispatch) => {
+export const authUser = (body, callback) => (dispatch) => {
   if (!body.login || !body.password)
     throw new Error("Invalid login or password");
   const url = `${serv}/api/auth`;
@@ -46,6 +43,7 @@ export const authUser = (body) => (dispatch) => {
     .post(url, body, requestConfig)
     .then((res) => {
       dispatch({ type: LOGIN_USER_SUCCESS, payload: res.data });
+      callback(res)
     })
     .catch((error) => {
       dispatch({ type: LOGIN_USER_FAIL, payload: error });

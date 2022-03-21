@@ -4,9 +4,9 @@ import axios from "axios";
 const requestConfig = { headers: { "Content-Type": "application/json" } };
 
 export const getAllWords =
-  (limit = 50) =>
+  limit =>
   (dispatch) => {
-    const url = "http://localhost:4000/api?limit=2";
+    const url = `http://localhost:4000/api?limit=${limit ? limit : 0}`;
     axios
       .get(url, requestConfig)
       .then((response) => {
