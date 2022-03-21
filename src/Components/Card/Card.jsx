@@ -1,7 +1,6 @@
 import "./Card.sass";
 
 const Card = ({ original, translate }) => {
-  console.log("card :", original, translate);
   return (
     <div className="Card">
       <div className="CardItem">

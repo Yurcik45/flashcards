@@ -1,8 +1,9 @@
 import "./WordsArea.sass";
 
-const WordsArea = ({ words, current_word }) => {
+const WordsArea = ({ words, current_word, setScroll }) => {
   const selectWord = (e) => {
     const word = e.target.textContent;
+    setScroll(e.target.dataset.id);
     console.log("selected word :", word);
   };
   return (
@@ -11,13 +12,14 @@ const WordsArea = ({ words, current_word }) => {
         return (
           <div
             key={id}
-            name={word}
+            name={word.original}
+            data-id={id}
             onClick={selectWord}
             className={`list-group-item WordAreaItem ${
-              word === current_word && "active"
+              word.original === current_word.original && "wa-active"
             }`}
           >
-            {word}
+            {id + 1 + "." + " " + word.original}
           </div>
         );
       })}

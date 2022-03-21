@@ -1,13 +1,13 @@
 import "./Navbar.sass";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 
-const Navbar = () => {
-  const temp = ["known_words", "unknown_words", "changed_words", "new_words"];
-  const [activeCategory, setActiveCategory] = useState("main");
+const Navbar = ({ categories, currentCategory, setCurrentCategory }) => {
   const changeCategory = (e) => {
     const category = e.target.name;
-    activeCategory !== category && setActiveCategory(category);
+    if (currentCategory !== category) {
+      setCurrentCategory(category);
+      localStorage.setItem("category", category);
+    }
   };
   // navbar-dark bg-dark
   return (
@@ -24,30 +24,21 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav">
-          <li
-            onClick={changeCategory}
-            className={`nav-item ${
-              activeCategory === "main" && "activeNavLink"
-            }`}
-          >
-            <a className="nav-link" name="main">
-              Main
-            </a>
-          </li>
-          {temp.map((item, id) => {
+          {categories.map((item, id) => {
             return (
               <li
                 key={id}
                 className={`nav-item ${
-                  activeCategory === item && "activeNavLink"
+                  currentCategory === item && "activeNavLink"
                 }`}
                 onClick={changeCategory}
               >
                 <a className="nav-link" name={item}>
-                  {(item === "known_words" && "Known") ||
-                    (item === "unknown_words" && "Unknown") ||
-                    (item === "changed_words" && "Changed") ||
-                    (item === "new_words" && "Your")}
+                  {(item === "generalWords" && "Main") ||
+                    (item === "knownWords" && "Known") ||
+                    (item === "unknownWords" && "Unknown") ||
+                    (item === "changedWords" && "Changed") ||
+                    (item === "newWords" && "Your")}
                 </a>
               </li>
             );

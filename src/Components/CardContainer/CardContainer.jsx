@@ -3,50 +3,36 @@ import Card from "../Card/Card";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
-const CardContainer = ({ cardsData }) => {
-  const [fb_data, set_fb_data] = useState([]);
-  const [scroll, setScroll] = useState(0);
-  const arrayLength = cardsData?.flashcards && cardsData.flashcards.length;
-  const scrollLeft = () => {
-    if (scroll > 0) {
-      setScroll(scroll - 1);
-    }
-  };
+const CardContainer = ({ currentCategory, scroll, setScroll }) => {
+  const redux_words = useSelector((state) => state.words);
+  const redux_user = useSelector((state) => state.user);
+  const words =
+    currentCategory === "generalWords"
+      ? redux_words[currentCategory]
+      : redux_user[currentCategory];
+  const arrayLength = words && words.length;
+  const scrollLeft = () => scroll > 0 && setScroll(+scroll - 1);
   // change scroll value for user click Right
-  const scrollRight = () => {
-    if (scroll < arrayLength - 1) {
-      setScroll(scroll + 1);
-    }
-  };
-  const category = localStorage.getItem("category");
-  const state = useSelector((state) => state.words);
-  useEffect(() => {
-    state[category].length > 0 && set_fb_data(state[category]);
-    console.log("effect");
-  }, [state]);
-  console.log("fb_data", fb_data[scroll]);
-  console.log("test :", state);
-  console.log("cards data", cardsData);
+  const scrollRight = () => scroll < arrayLength - 1 && setScroll(+scroll + 1);
+  console.log("scroll", scroll);
   return (
     <div className="CardContainer">
-      <button className="scrollButton" onClick={scrollLeft}>
-        prev
-      </button>
-      {/* {fb_data[scroll].original &&
-        <Card
-          original={fb_data[scroll].original}
-          translate={fb_data[scroll].translate}
-        />
-      } */}
-      {/* {cardsData?.flashcards &&
-        <Card
-          original={cardsData.flashcards[scroll].original}
-          translate={cardsData.flashcards[scroll].translate}
-        />
-      } */}
-      <button className="scrollButton" onClick={scrollRight}>
-        next
-      </button>
+      {words.length > 0 ? (
+        <>
+          <button className="scrollButton" onClick={scrollLeft}>
+            prev
+          </button>
+          <Card
+            original={words[scroll].original}
+            translate={words[scroll].translate}
+          />
+          <button className="scrollButton" onClick={scrollRight}>
+            next
+          </button>
+        </>
+      ) : (
+        <div className="empty_cards_data">This category is empty</div>
+      )}
     </div>
   );
 };

@@ -19,7 +19,18 @@
   height: 50px
 .fully_words_list
   overflow-y: scroll
-  width: 70vw
+  width: 1285px
+  min-height: 250px
   height: calc(100vh - 110px)
   max-height: calc(100vh - 110px)
   background: #fff
+
+@media screen and (max-width: 1400px)
+  .fully_words_list
+    width: 965px
+@media screen and (max-width: 1200px)
+  .fully_words_list
+    width: 645px
+@media screen and (max-width: 800px)
+  .fully_words_list
+    width: 325px

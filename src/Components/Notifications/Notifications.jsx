@@ -1,7 +1,6 @@
 import "./Notifications.sass";
 
 const Notifications = ({ text, type }) => {
-  console.log("call notif type :", type);
   let notifClass;
   switch (type) {
     case "info":

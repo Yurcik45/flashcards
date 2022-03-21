@@ -1,8 +1,8 @@
 const { general_words } = require("./words");
 const { users } = require("./users");
 
-const getGeneralWords = (callback) => {
-  general_words.find({}, ["original", "translate"]).exec(callback);
+const getGeneralWords = (limit, callback) => {
+  general_words.find({}, ["original", "translate"]).skip(1).limit(limit).exec(callback);
 };
 
 const findUser = (login, callback) => {
