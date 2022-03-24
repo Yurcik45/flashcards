@@ -1,9 +1,9 @@
 .CardContainer
   display: flex
   align-items: center
-  justify-content: center
-  height: 560px
-  width: 800px
+  justify-content: space-between
+  height: 400px
+  width: 1000px
   margin: 60px 0 0 0
   border-radius: 15px
   border: 1px solid black
@@ -11,3 +11,19 @@
 .empty_cards_data
   font-size: 30px
   font-family: monospace, sans-serif
+
+.bottomScrollButtonPos
+  display: none
+.aboveScrollButtonPos
+  display: flex
+  margin: 0 20px 0 20px
+
+@media screen and (max-width: 1200px)
+  .CardContainer
+    flex-direction: column
+    width: 800px
+  .bottomScrollButtonPos
+    display: flex
+    margin: 20px 40px 10px 40px
+  .aboveScrollButtonPos
+    display: none !important

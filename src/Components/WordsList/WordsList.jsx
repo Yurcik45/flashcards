@@ -67,7 +67,6 @@ const WordsList = ({
             words={words}
             current_word={words[scroll]}
             setScroll={setScroll}
-            currentWord={currentWord}
             setCurrentWord={setCurrentWord}
           />
         </ClickAwayListener>

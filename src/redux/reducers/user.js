@@ -5,6 +5,8 @@ import {
   LOGIN_USER_FAIL,
   GET_USER_SUCCESS,
   GET_USER_FAIL,
+  ADD_KNOWN_WORD_SUCCESS,
+  ADD_UNKNOWN_WORD_SUCCESS,
 } from "../types";
 
 const initialState = {
@@ -19,6 +21,7 @@ const initialState = {
 };
 
 export default (state = initialState, action = {}) => {
+  console.log('action', action);
   switch (action.type) {
     case REGISTER_USER_SUCCESS:
       return {
@@ -52,6 +55,16 @@ export default (state = initialState, action = {}) => {
         changedWords: action.payload.changedWords ?? [],
         newWords: action.payload.newWords ?? [],
         loginned: true,
+      };
+    case ADD_KNOWN_WORD_SUCCESS:
+      return {
+        ...state,
+        knownWords: state.knownWords.push(action.payload),
+      };
+    case ADD_UNKNOWN_WORD_SUCCESS:
+      return {
+        ...state,
+        unknownWords: state.unknownWords.push(action.payload),
       };
     case REGISTER_USER_FAIL:
       return {
