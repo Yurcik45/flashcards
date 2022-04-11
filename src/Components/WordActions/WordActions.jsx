@@ -1,52 +1,49 @@
 import { useDispatch } from "react-redux";
 import "./WordActions.sass";
-import {
-  addKnownWord,
-  addUnknownWord,
-  changeWord,
-  deleteWord,
-  getUser,
-} from "../../redux/actions/user";
+import { addWordAction, changeWord, getUser } from "../../redux/actions/user";
 import { useSelector } from "react-redux";
+import { wordActionButtons } from "./WordActionbuttons";
 
-const WordActions = ({ currentWord, notificationHandler }) => {
+const WordActions = ({ currentWord, notificationHandler, setShowModal }) => {
   const dispatch = useDispatch();
-  let category = localStorage.getItem("category");
-  const login = useSelector(state => state.user.login);
-  // console.log("currentWord :", currentWord);
-  const wordAction = (type, word, changed = "") => {
-    switch (type) {
-      case "know":
-        dispatch(addKnownWord(login, currentWord, (res) => {
-          dispatch(getUser({login}))
-          console.log('add kn res', res);
-          const code = res.data.code;
-          const msg = res.data.msg;
-          if (code === 1) return notificationHandler(msg, 'warning')
-          return notificationHandler(res.data.msg, 'success')
-        }))
+  const category = localStorage.getItem("category");
+  const user = useSelector((state) => state.user);
+  const login = user.login;
+  const knownWords = user.knownWords;
+  const unknownWords = user.unknownWords;
+  const changedWords = user.changedWords;
+  const newWords = user.newWords;
+
+  const callWordAction = (action) => {
+    const addWordConditions = (addedListArr, list) => {
+      const findSame = addedListArr.filter(
+        (kn) => kn.original === currentWord.original
+      );
+      if (findSame.length > 0)
+        return notificationHandler(
+          `"${currentWord.original}" already exist in ${list}`,
+          "warning"
+        );
+      addWordAction(login, currentWord, list, (res) => {
+        if (res.data.code === 1)
+          return notificationHandler(res.data.msg, "danger");
+        dispatch(getUser(login));
+        return notificationHandler(res.data.msg, "success");
+      });
+    }
+    switch (action) {
+      case "add_to_known":
+        addWordConditions(knownWords, "knownWords")
         break;
-      case "unknow":
-        dispatch(addUnknownWord(login, currentWord, (res) => {
-          dispatch(getUser({login}))
-          console.log('add unk res', res);
-          const code = res.data.code;
-          const msg = res.data.msg;
-          if (code === 1) return notificationHandler(msg, 'warning')
-          return notificationHandler(res.data.msg, 'success')
-        }))
+      case "add_to_unknown":
+        addWordConditions(unknownWords, "unknownWords")
         break;
-      case "change":
-        console.log("change");
-        // action to change ["word 1 --> new_word 1", "word 2 --> new_word 2"]
+      case "add_to_changed":
+        const oldChangedWords = changedWords.map(ch => ch.old)
+        addWordConditions(oldChangedWords, "changedWords")
         break;
-      case "new":
-        console.log("new");
-        // action to add user new list
-        break;
-      case "delete":
-        console.log("delete");
-        // action to delete from current list
+      case "add_to_new":
+        addWordConditions(newWords, "newWords")
         break;
       default:
         break;
@@ -54,51 +51,20 @@ const WordActions = ({ currentWord, notificationHandler }) => {
   };
   return (
     <div className="WordActions">
-      {(category === "generalWords" || category === "unknownWords") && (
-        <button
-          onClick={() => wordAction("know")}
-          type="button"
-          className="btn nav_button btn-outline-success"
-        >
-          I know this word :)
-        </button>
-      )}
-      {(category == "generalWords" || category === "knownWords") && (
-        <button
-          onClick={() => wordAction("unknow")}
-          type="button"
-          className="btn nav_button btn-outline-primary"
-        >
-          Must be repeated
-        </button>
-      )}
-      {category !== "newWords" && category !== "changedWords" && (
-        <button
-          onClick={() => wordAction("change")}
-          type="button"
-          className="btn nav_button btn-outline-warning"
-        >
-          I see the mistake
-        </button>
-      )}
-      {category === "generalWords" && (
-        <button
-          onClick={() => wordAction("new")}
-          type="button"
-          className="btn nav_button btn-outline-dark"
-        >
-          Add new word
-        </button>
-      )}
-      {category !== "generalWords" && (
-        <button
-          onClick={() => wordAction("delete")}
-          type="button"
-          className="btn nav_button btn-outline-danger"
-        >
-          Delete
-        </button>
-      )}
+      {wordActionButtons(category).map((btn, id) => {
+        return (
+          btn.condition && (
+            <button
+              key={id}
+              onClick={() => callWordAction(btn.clickAction)}
+              type="button"
+              className={`btn nav_button ${btn.class}`}
+            >
+              {btn.text}
+            </button>
+          )
+        );
+      })}
     </div>
   );
 };

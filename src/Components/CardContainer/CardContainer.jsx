@@ -24,28 +24,47 @@ const CardContainer = ({
       translate: words[scroll]?.original && words[scroll].translate,
     });
   }, [scroll, words]);
+
+  const prevButton = (
+    <button className="scrollButton" onClick={scrollLeft}>
+      prev
+    </button>
+  );
+  const nextButton = (
+    <button className="scrollButton" onClick={scrollRight}>
+      next
+    </button>
+  );
+  const unloginnedArea = (
+    <div className="empty_cards_data">
+      {redux_user.loginned
+        ? "This category is empty, add words :)"
+        : "This feature close for you, log in firstly"}
+    </div>
+  );
   return (
     <div className="CardContainer">
-      {words.length > 0 ? (
-        <>
-          <button className="scrollButton" onClick={scrollLeft}>
-            prev
-          </button>
+      {words.length > 0 ?
+        window.innerWidth > 1200
+        ? <>
+          {prevButton}
           <Card
             original={words[scroll].original}
             translate={words[scroll].translate}
           />
-          <button className="scrollButton" onClick={scrollRight}>
-            next
-          </button>
+          {nextButton}
         </>
-      ) : (
-        <div className="empty_cards_data">
-          {redux_user.loginned
-            ? "This category is empty, add words :)"
-            : "This feature close for you, log in firstly"}
+        : <>
+        <Card
+          original={words[scroll].original}
+          translate={words[scroll].translate}
+        />
+        <div className="arrowsMobile">
+          {prevButton}
+          {nextButton}
         </div>
-      )}
+      </>
+      : unloginnedArea}
     </div>
   );
 };

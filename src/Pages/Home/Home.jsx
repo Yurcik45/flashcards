@@ -16,17 +16,16 @@ const Home = ({ currentCategory, notificationHandler }) => {
   const loginned = useSelector((state) => state.user.loginned);
   const [viewWordsList, setViewWordsList] = useState(false);
   const [scroll, setScroll] = useState(0);
+  const [showModal, setShowModal] = useState({status: false, type: 'add'});
   const [currentWord, setCurrentWord] = useState();
   useEffect(() => {
     if (s_user) {
-      dispatch(getUser({ login: s_user }));
+      dispatch(getUser(s_user));
       dispatch(getAllWords());
     } else {
       dispatch(getAllWords(30));
     }
   }, [s_user]);
-
-  console.log('current word :', currentWord);
 
   return (
     <div className="Home">
@@ -46,12 +45,18 @@ const Home = ({ currentCategory, notificationHandler }) => {
         currentWord={currentWord}
         setCurrentWord={setCurrentWord}
       />
-      {loginned && <WordActions currentWord={currentWord} notificationHandler={notificationHandler} />}
+      {loginned && (
+        <WordActions
+          currentWord={currentWord}
+          notificationHandler={notificationHandler}
+          setShowModal={setShowModal}
+        />
+      )}
       {/* {showModal.status && (
         <ModalContainer
           showModal={showModal}
           setShowModal={setShowModal}
-          setUserName={setUserName}
+          notificationHandler={notificationHandler}
         />
       )} */}
     </div>

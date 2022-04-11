@@ -1,8 +1,11 @@
 import "./Navbar.sass";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { userLogOut } from "../../redux/actions/user";
+import { useDispatch } from "react-redux";
 
 const Navbar = ({ categories, currentCategory, setCurrentCategory }) => {
+  const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
   const loginned = user.loginned;
   const login = user.login;
@@ -13,6 +16,7 @@ const Navbar = ({ categories, currentCategory, setCurrentCategory }) => {
       localStorage.setItem("category", category);
     }
   };
+  const logOut = () => dispatch(userLogOut());
   // navbar-dark bg-dark
   return (
     <nav className="Navbar navbar navbar-expand-lg navbar-light bg-light">
@@ -71,7 +75,7 @@ const Navbar = ({ categories, currentCategory, setCurrentCategory }) => {
           </>
         )}
         {loginned && (
-          <NavLink to="/auth">
+          <NavLink to="/" onClick={logOut}>
             <button type="button" className="btn btn-danger nav_button">
               Log out
             </button>

@@ -7,6 +7,7 @@ import {
   GET_USER_FAIL,
   ADD_KNOWN_WORD_SUCCESS,
   ADD_UNKNOWN_WORD_SUCCESS,
+  LOGOUT_USER_SUCCESS,
 } from "../types";
 
 const initialState = {
@@ -21,7 +22,6 @@ const initialState = {
 };
 
 export default (state = initialState, action = {}) => {
-  console.log('action', action);
   switch (action.type) {
     case REGISTER_USER_SUCCESS:
       return {
@@ -37,13 +37,24 @@ export default (state = initialState, action = {}) => {
     case LOGIN_USER_SUCCESS:
       return {
         ...state,
-        login: action.payload.login,
-        role: action.payload.role,
+        login: action.payload.login ?? "",
+        role: action.payload.role ?? "",
         knownWords: action.payload.knownWords ?? [],
         unknownWords: action.payload.unknownWords ?? [],
         changedWords: action.payload.changedWords ?? [],
         newWords: action.payload.newWords ?? [],
-        loginned: true,
+        loginned: action.payload.code === "l1" ? false : true,
+      };
+    case LOGOUT_USER_SUCCESS:
+      return {
+        login: "",
+        role: "",
+        knownWords: [],
+        unknownWords: [],
+        changedWords: [],
+        newWords: [],
+        error_msg: "",
+        loginned: false,
       };
     case GET_USER_SUCCESS:
       return {

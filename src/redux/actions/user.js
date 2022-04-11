@@ -7,6 +7,11 @@ import {
   GET_USER_FAIL,
   ADD_KNOWN_WORD_SUCCESS,
   ADD_UNKNOWN_WORD_SUCCESS,
+  ADD_WORD_SUCCESS,
+  ADD_WORD_FAIL,
+  CHANGE_WORD_SUCCESS,
+  CHANGE_WORD_FAIL,
+  LOGOUT_USER_SUCCESS,
 } from "../types";
 import axios from "axios";
 
@@ -14,8 +19,13 @@ const serv = "http://localhost:4000";
 
 const requestConfig = { headers: { "Content-Type": "application/json" } };
 
-export const getUser = (user) => (dispatch) => {
-  const url = `${serv}/api/user?user=${user.login}`;
+export const userLogOut = () => (dispatch) => {
+  localStorage.clear();
+  dispatch({ type: LOGOUT_USER_SUCCESS })
+}
+
+export const getUser = (login) => (dispatch) => {
+  const url = `${serv}/api/user?user=${login}`;
   axios
     .get(url, requestConfig)
     .then((res) => {
@@ -50,30 +60,17 @@ export const authUser = (body, callback) => (dispatch) => {
     });
 };
 
-export const addKnownWord = (login, word, callback) => (dispatch) => {
-  const url = `${serv}/api/known`;
-  const body = { login, word };
+export const addWordAction = (login, word, list, callback) => {
+  const url = `${serv}/api/words`;
+  const body = { login, word, list };
   axios
     .post(url, body, requestConfig)
     .then((res) => {
       callback(res);
-      // console.log("add known data :", res.data);
-      // dispatch({ type: ADD_KNOWN_WORD_SUCCESS, payload: res.data.item });
     })
-    .catch((err) => callback(err));
+    .catch(callback);
 };
-export const addUnknownWord = (login, word, callback) => (dispatch) => {
-  const url = `${serv}/api/unknown`;
-  const body = { login, word };
-  axios
-    .post(url, body, requestConfig)
-    .then((res) => {
-      callback(res);
-      // console.log("add unknown data :", res.data.item);
-      // dispatch({ type: ADD_UNKNOWN_WORD_SUCCESS, payload: res.data.item });
-    })
-    .catch((err) => callback(err));
-};
+
 export const changeWord = (login, word, new_word, callback) => (dispatch) => {
   const url = `${serv}/api/change_word`;
   const body = { login, word, new_word };

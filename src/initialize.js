@@ -13,8 +13,8 @@ const init_categories = [
   "generalWords",
   "knownWords",
   "unknownWords",
-  "changedWords",
-  "newWords",
+  // "changedWords",
+  // "newWords",
 ];
 
 const init_current_categ = () => (s_category ? s_category : "generalWords");

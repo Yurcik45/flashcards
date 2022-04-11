@@ -6,14 +6,16 @@ const { getGeneralWords } = require("../models/index");
 const { registerUser, authUser } = require("./auth");
 const { getUser } = require("./user");
 const { infoLog, successLog, errorLog } = require("../tools/custom_logs");
-const { add_to_known_unknown_controller } = require("../routes/words");
+const {
+  getWord,
+  addWord,
+  updateWord,
+  deleteWord,
+} = require("../routes/words");
 
 router.get("/", (req, res) => {
-  // const limit = req.query?.limit ?? 10;
-  const limit = 10;
-  // get initial info to front-end
-  // get user
-  // get general words (with limit)
+  const limit = req.query?.limit ?? 10;
+  // const limit = 10;
   getGeneralWords(limit, (err, data) => {
     if (err) return errorLog("find chanel news", err);
     successLog(data);
@@ -21,15 +23,13 @@ router.get("/", (req, res) => {
   });
 });
 
-router.post("/register", (req, res) => registerUser(req, res));
-router.post("/auth", (req, res) => authUser(req, res));
-router.get("/user", (req, res) => getUser(req, res));
+router.post("/register", registerUser);
+router.post("/auth", authUser);
+router.get("/user", getUser);
 
-router.post("/known", (req, res) =>
-  add_to_known_unknown_controller(req, res, "knownWords")
-);
-router.post("/unknown", (req, res) =>
-  add_to_known_unknown_controller(req, res, "unknownWords")
-);
+router.get("/words", getWord);
+router.post("/words", addWord);
+router.patch("/words", updateWord);
+router.delete("/words", deleteWord);
 
 module.exports = router;

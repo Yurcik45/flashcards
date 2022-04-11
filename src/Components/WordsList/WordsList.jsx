@@ -15,7 +15,7 @@ const WordsList = ({
 }) => {
   const redux_words = useSelector((state) => state.words);
   const redux_user = useSelector((state) => state.user);
-  const words =
+  let words =
     currentCategory === "generalWords"
       ? redux_words[currentCategory]
       : redux_user[currentCategory];
@@ -46,6 +46,10 @@ const WordsList = ({
     } else {
       notificationHandler("log in firstly", "warning");
     }
+    words =
+    currentCategory === "generalWords"
+      ? redux_words[currentCategory]
+      : redux_user[currentCategory];
   };
   return (
     <div

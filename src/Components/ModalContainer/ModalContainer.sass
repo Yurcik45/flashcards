@@ -1,7 +1,12 @@
-.ModalContainer
+.ModalContainer,
+.login_form,
+.form__input,
+.modal_btn
   display: flex
   align-items: center
   justify-content: center
+.ModalContainer
+  flex-direction: column
   position: fixed
   min-height: 100vh
   height: 100vh
@@ -14,7 +19,49 @@
   left: 0
   right: 0
   z-index: 99
-  background-image: linear-gradient(to right, #7fffac 0, #9f7fed 100%)
+  background-image: linear-gradient(to right, #7fffac 0, #9f7fed 60%)
   font-size: 30px
-  transition: .9s
-  border: 1px solid black
+  transition: .3s
+  // border: 1px solid black
+
+.modal_close_hint
+  margin-bottom: 5%
+  font-family: monospace, sans-serif
+  font-size: 25px
+  font-style: oblique
+  text-decoration: overline
+
+.login_form
+  flex-direction: column
+  background-color: #fff
+  border-radius: 20px
+  border-top: 1px solid #ccc
+  border-right: 1px solid #ccc
+
+.form__input
+  width: 100%
+  border: 0px solid transparent
+  border-radius: 0
+  border-bottom: 1px solid #aaa
+  padding: 1em .5em .5em
+  outline: none
+  margin: 1.5em auto
+  transition: all .5s ease
+  &:focus
+    border-bottom-color: #008080
+    box-shadow: 0 0 5px rgba(0, 80, 80, 0.4)
+    border-radius: 4px
+.modal_btn
+  width: 40%
+  height: 45px
+  transition: all .5s ease
+  border-radius: 30px
+  color: #008080
+  font-weight: 600
+  background-color: #fff
+  border: 1px solid #008080
+  margin-top: 1.5em
+  margin-bottom: 1em
+  &:hover, &:focus
+    background-color: #008080
+    color: #fff
