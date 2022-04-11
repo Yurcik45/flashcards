@@ -4,12 +4,13 @@ import { useSelector } from "react-redux";
 import { userLogOut } from "../../redux/actions/user";
 import { useDispatch } from "react-redux";
 
-const Navbar = ({ categories, currentCategory, setCurrentCategory }) => {
+const Navbar = ({ categories, currentCategory, setCurrentCategory, setScroll }) => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
   const loginned = user.loginned;
   const login = user.login;
   const changeCategory = (e) => {
+    setScroll(0);
     const category = e.target.name;
     if (currentCategory !== category) {
       setCurrentCategory(category);

@@ -11,11 +11,10 @@ import { useEffect } from "react";
 import { s_user } from "../../initialize";
 import WordActions from "../../Components/WordActions/WordActions";
 
-const Home = ({ currentCategory, notificationHandler }) => {
+const Home = ({ currentCategory, notificationHandler, scroll, setScroll }) => {
   const dispatch = useDispatch();
   const loginned = useSelector((state) => state.user.loginned);
   const [viewWordsList, setViewWordsList] = useState(false);
-  const [scroll, setScroll] = useState(0);
   const [showModal, setShowModal] = useState({status: false, type: 'add'});
   const [currentWord, setCurrentWord] = useState();
   useEffect(() => {

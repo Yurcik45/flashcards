@@ -44,27 +44,31 @@ const CardContainer = ({
   );
   return (
     <div className="CardContainer">
-      {words.length > 0 ?
-        window.innerWidth > 1200
-        ? <>
-          {prevButton}
-          <Card
-            original={words[scroll].original}
-            translate={words[scroll].translate}
-          />
-          {nextButton}
-        </>
-        : <>
-        <Card
-          original={words[scroll].original}
-          translate={words[scroll].translate}
-        />
-        <div className="arrowsMobile">
-          {prevButton}
-          {nextButton}
-        </div>
-      </>
-      : unloginnedArea}
+      {words.length > 0 ? (
+        window.innerWidth > 1200 ? (
+          <>
+            {prevButton}
+            <Card
+              original={words[scroll].original}
+              translate={words[scroll].translate}
+            />
+            {nextButton}
+          </>
+        ) : (
+          <>
+            <Card
+              original={words[scroll].original}
+              translate={words[scroll].translate}
+            />
+            <div className="arrowsMobile">
+              {prevButton}
+              {nextButton}
+            </div>
+          </>
+        )
+      ) : (
+        unloginnedArea
+      )}
     </div>
   );
 };

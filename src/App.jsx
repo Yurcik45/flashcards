@@ -12,6 +12,7 @@ const App = () => {
   const [currentCategory, setCurrentCategory] = useState(init_current_categ());
   const [notifiaction, setNotification] = useState({ active: false });
   const [authData] = useState({});
+  const [scroll, setScroll] = useState(0);
   const [registerData] = useState({});
   const [categories] = useState(init_categories);
 
@@ -36,6 +37,7 @@ const App = () => {
           categories={categories}
           currentCategory={currentCategory}
           setCurrentCategory={setCurrentCategory}
+          setScroll={setScroll}
         />
       )}
       <Routes>
@@ -46,6 +48,8 @@ const App = () => {
             <Home
               currentCategory={currentCategory}
               notificationHandler={notificationHandler}
+              scroll={scroll}
+              setScroll={setScroll}
             />
           }
         />
