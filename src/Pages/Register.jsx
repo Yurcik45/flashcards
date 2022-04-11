@@ -2,6 +2,7 @@ import { registrationUser } from "../redux/actions/user";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import AuthForm from "../Components/AuthForm/AuthForm";
+import { useEffect } from "react";
 
 const Register = ({ registerData, notificationHandler, type }) => {
   const dispatch = useDispatch();
@@ -11,7 +12,7 @@ const Register = ({ registerData, notificationHandler, type }) => {
     const value = e.target.value;
     registerData[name] = value;
   };
-  const registerUserAction = () => {
+  const registerUserAction = (e) => {
     if (!registerData.login && !registerData.password)
       return notificationHandler(
         "Please enter your login and password!",
@@ -44,6 +45,14 @@ const Register = ({ registerData, notificationHandler, type }) => {
       }, 1000)
     }));
   };
+  useEffect(() => {
+    window.addEventListener('keyup', e => {
+      if (e.keyCode === 13) {
+        const location = window.location.pathname.split('/')[1];
+        if (location === 'register') registerUserAction()
+      }
+    })
+  }, [])
   return (
     <AuthForm
       type={type}

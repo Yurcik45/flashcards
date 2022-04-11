@@ -1,9 +1,9 @@
 import "./Card.sass";
 
-const Card = ({ original, translate }) => {
+const Card = ({ original, translate, cardItemFont }) => {
   return (
     <div className="Card">
-      <div className="CardItem">
+      <div className="CardItem" style={{fontSize: `${cardItemFont}vmin`}}>
         <div className="CardItemFront">
           <div className="textBody">{original}</div>
         </div>

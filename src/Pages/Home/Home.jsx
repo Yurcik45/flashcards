@@ -8,23 +8,27 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllWords } from "../../redux/actions/words";
 import { getUser } from "../../redux/actions/user";
 import { useEffect } from "react";
-import { s_user } from "../../initialize";
 import WordActions from "../../Components/WordActions/WordActions";
+import FontRegular from "../../Components/FontRegular/FontRegular";
 
 const Home = ({ currentCategory, notificationHandler, scroll, setScroll }) => {
   const dispatch = useDispatch();
   const loginned = useSelector((state) => state.user.loginned);
   const [viewWordsList, setViewWordsList] = useState(false);
-  const [showModal, setShowModal] = useState({status: false, type: 'add'});
+  const [showModal, setShowModal] = useState({ status: false, type: "add" });
   const [currentWord, setCurrentWord] = useState();
+  const local_card_font = +localStorage.getItem('local_card_font') ?? 2;
+  console.log('local_card_font', local_card_font);
+  const [cardItemFont, cardItemFontSet] = useState(local_card_font);
+  const local_user = localStorage.getItem("user");
   useEffect(() => {
-    if (s_user) {
-      dispatch(getUser(s_user));
+    if (local_user) {
+      dispatch(getUser(local_user));
       dispatch(getAllWords());
     } else {
       dispatch(getAllWords(30));
     }
-  }, [s_user]);
+  }, [local_user]);
 
   return (
     <div className="Home">
@@ -33,6 +37,7 @@ const Home = ({ currentCategory, notificationHandler, scroll, setScroll }) => {
         scroll={scroll}
         setScroll={setScroll}
         setCurrentWord={setCurrentWord}
+        cardItemFont={cardItemFont}
       />
       <WordsList
         currentCategory={currentCategory}
@@ -43,6 +48,11 @@ const Home = ({ currentCategory, notificationHandler, scroll, setScroll }) => {
         notificationHandler={notificationHandler}
         currentWord={currentWord}
         setCurrentWord={setCurrentWord}
+      />
+      <FontRegular
+        cardItemFont={cardItemFont}
+        cardItemFontSet={cardItemFontSet}
+        notificationHandler={notificationHandler}
       />
       {loginned && (
         <WordActions

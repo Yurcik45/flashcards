@@ -7,6 +7,9 @@ import { useDispatch } from "react-redux";
 const Navbar = ({ categories, currentCategory, setCurrentCategory, setScroll }) => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
+  const general_words_length = useSelector(state => state.words.generalWords).length + 1;
+  const known_words_length = user.knownWords.length;
+  const unknownWords = user.unknownWords.length;
   const loginned = user.loginned;
   const login = user.login;
   const changeCategory = (e) => {
@@ -43,9 +46,9 @@ const Navbar = ({ categories, currentCategory, setCurrentCategory, setScroll }) 
                 onClick={changeCategory}
               >
                 <a className="nav-link" name={item}>
-                  {(item === "generalWords" && "Main") ||
-                    (item === "knownWords" && "Known") ||
-                    (item === "unknownWords" && "Unknown") ||
+                  {(item === "generalWords" && `All (${general_words_length})`) ||
+                    (item === "knownWords" && `Known (${known_words_length})`) ||
+                    (item === "unknownWords" && `Unknown (${unknownWords})`) ||
                     (item === "changedWords" && "Changed") ||
                     (item === "newWords" && "Your")}
                 </a>

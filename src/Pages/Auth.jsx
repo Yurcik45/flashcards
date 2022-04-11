@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import AuthForm from "../Components/AuthForm/AuthForm";
 import { useNavigate } from "react-router-dom";
 import { authUser } from "../redux/actions/user";
+import { useEffect } from 'react';
 
 const Auth = ({ authData, notificationHandler, type }) => {
   const dispatch = useDispatch();
@@ -35,10 +36,6 @@ const Auth = ({ authData, notificationHandler, type }) => {
       if (data.code === 'l1') return notificationHandler(data.msg, 'warning')
       if (data.code === 'l0')
         localStorage.setItem('user', data.user.login);
-        // localStorage.setItem('knownWords', data.user.knownWords);
-        // localStorage.setItem('unknownWords', data.user.unknownWords);
-        // localStorage.setItem('changedWords', data.user.changedWords);
-        // localStorage.setItem('newWords', data.user.newWords);
         notificationHandler(data.msg, 'success')
         const authTimeout = setTimeout(() => {
           navigate('/')
@@ -46,6 +43,14 @@ const Auth = ({ authData, notificationHandler, type }) => {
         }, 1000)
     }));
   };
+  useEffect(() => {
+    window.addEventListener('keyup', e => {
+      if (e.keyCode === 13) {
+        const location = window.location.pathname.split('/')[1];
+        if (location === 'auth') authUserAction()
+      }
+    })
+  }, [])
   return (
     <AuthForm type={type} inputData={authUserInput} action={authUserAction} />
   );

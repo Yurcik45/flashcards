@@ -8,6 +8,7 @@ const CardContainer = ({
   scroll,
   setScroll,
   setCurrentWord,
+  cardItemFont,
 }) => {
   const redux_words = useSelector((state) => state.words);
   const redux_user = useSelector((state) => state.user);
@@ -51,6 +52,7 @@ const CardContainer = ({
             <Card
               original={words[scroll].original}
               translate={words[scroll].translate}
+              cardItemFont={cardItemFont}
             />
             {nextButton}
           </>
@@ -59,6 +61,7 @@ const CardContainer = ({
             <Card
               original={words[scroll].original}
               translate={words[scroll].translate}
+              cardItemFont={cardItemFont}
             />
             <div className="arrowsMobile">
               {prevButton}
