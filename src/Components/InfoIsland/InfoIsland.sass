@@ -1,0 +1,40 @@
+.InfoIsland,
+.info_body
+  display: flex
+  align-items: center
+  justify-content: center
+
+.InfoIsland
+  position: absolute
+  left: 20px
+  bottom: 20px
+  width: 40px
+  height: 40px
+  font-size: 20px
+  border-radius: 50%
+  cursor: pointer
+  border: 1px dashed black
+  &:hover 
+    .info_body
+        display: flex
+
+.info_body
+  display: none
+  flex-direction: column
+  align-items: flex-start
+  position: absolute
+  font-size: 15px
+  left: 0
+  bottom: 70px
+  width: 340px
+  height: 160px
+  overflow: hidden
+  color: #000
+  border-radius: 20px
+  padding: 10px 5px 0 15px
+  background-color: #f7f7f7
+  border: 1px dashed grey
+
+.hint_img
+  height: 20px
+  padding: 0 8px

@@ -10,6 +10,7 @@ import { getUser } from "../../redux/actions/user";
 import { useEffect } from "react";
 import WordActions from "../../Components/WordActions/WordActions";
 import FontRegular from "../../Components/FontRegular/FontRegular";
+import InfoIsland from "../../Components/InfoIsland/InfoIsland";
 
 const Home = ({ currentCategory, notificationHandler, scroll, setScroll }) => {
   const dispatch = useDispatch();
@@ -67,6 +68,7 @@ const Home = ({ currentCategory, notificationHandler, scroll, setScroll }) => {
           notificationHandler={notificationHandler}
         />
       )} */}
+      <InfoIsland />
     </div>
   );
 };

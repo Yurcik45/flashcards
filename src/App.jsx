@@ -13,7 +13,9 @@ const App = () => {
   const [notifiaction, setNotification] = useState({ active: false });
   const [authData] = useState({});
   const [scroll, setScroll] = useState(
-    currentCategory === 'generalWords' ? +localStorage.getItem('generalCount') ?? 0 : 0
+    currentCategory === "generalWords"
+      ? +localStorage.getItem("generalCount") ?? 0
+      : 0
   );
   const [registerData] = useState({});
   const [categories] = useState(init_categories);

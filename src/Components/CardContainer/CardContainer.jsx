@@ -1,7 +1,8 @@
 import "./CardContainer.sass";
 import Card from "../Card/Card";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useMemo } from "react";
 
 const CardContainer = ({
   currentCategory,
@@ -24,8 +25,8 @@ const CardContainer = ({
     scroll < arrayLength - 1 && setScroll(+scroll + 1);
   };
   useEffect(() => {
-    const category = localStorage.getItem('category') ?? 'generalWords';
-    category === 'generalWords' && localStorage.setItem('generalCount', scroll)
+    const category = localStorage.getItem("category") ?? "generalWords";
+    category === "generalWords" && localStorage.setItem("generalCount", scroll);
     setCurrentWord({
       original: words[scroll]?.original && words[scroll].original,
       translate: words[scroll]?.original && words[scroll].translate,
@@ -49,6 +50,31 @@ const CardContainer = ({
         : "This feature close for you, log in firstly"}
     </div>
   );
+  const [showTranslate, setShowTranslate] = useState(false);
+  const translateStatus = () => setShowTranslate(!showTranslate);
+  useEffect(() => {
+    const listener = (event) => {
+      switch (event.keyCode) {
+        case 32:
+          translateStatus();
+          break;
+        case 37:
+          scrollLeft();
+          break;
+        case 39:
+          scrollRight();
+          break;
+        case 80:
+          scrollLeft();
+          break;
+        case 78:
+          scrollRight();
+          break;
+      }
+    };
+    window.addEventListener("keyup", listener);
+    return () => window.removeEventListener("keyup", listener);
+  });
   return (
     <div className="CardContainer">
       {words.length > 0 ? (
@@ -59,6 +85,8 @@ const CardContainer = ({
               original={words[scroll].original}
               translate={words[scroll].translate}
               cardItemFont={cardItemFont}
+              showTranslate={showTranslate}
+              translateStatus={translateStatus}
             />
             {nextButton}
           </>
@@ -68,6 +96,8 @@ const CardContainer = ({
               original={words[scroll].original}
               translate={words[scroll].translate}
               cardItemFont={cardItemFont}
+              showTranslate={showTranslate}
+              translateStatus={translateStatus}
             />
             <div className="arrowsMobile">
               {prevButton}
