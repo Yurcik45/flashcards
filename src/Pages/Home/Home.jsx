@@ -18,7 +18,8 @@ const Home = ({ currentCategory, notificationHandler, scroll, setScroll }) => {
   const [viewWordsList, setViewWordsList] = useState(false);
   const [showModal, setShowModal] = useState({ status: false, type: "add" });
   const [currentWord, setCurrentWord] = useState();
-  const local_card_font = +localStorage.getItem('local_card_font') ?? 2;
+  const get_local_card_font = localStorage.getItem('local_card_font');
+  const local_card_font = get_local_card_font ? +get_local_card_font : 2;
   const [cardItemFont, cardItemFontSet] = useState(local_card_font);
   const local_user = localStorage.getItem("user");
   useEffect(() => {

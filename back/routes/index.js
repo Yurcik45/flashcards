@@ -14,8 +14,8 @@ const {
 } = require("../routes/words");
 
 router.get("/", (req, res) => {
-  const limit = req.query?.limit ?? 10;
-  // const limit = 50;
+  // const limit = req.query?.limit ?? 10;
+  const limit = 50;
   getGeneralWords(limit, (err, data) => {
     if (err) return errorLog("find chanel news", err);
     successLog(data);

@@ -4,28 +4,37 @@ import { useSelector } from "react-redux";
 import { userLogOut } from "../../redux/actions/user";
 import { useDispatch } from "react-redux";
 
-const Navbar = ({ categories, currentCategory, setCurrentCategory, setScroll }) => {
+const Navbar = ({
+  categories,
+  currentCategory,
+  setCurrentCategory,
+  setScroll,
+}) => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
-  const general_words_length = useSelector(state => state.words.generalWords).length + 1;
+  const general_words_length =
+    useSelector((state) => state.words.generalWords).length + 1;
   const known_words_length = user.knownWords.length;
   const unknownWords = user.unknownWords.length;
   const loginned = user.loginned;
   const login = user.login;
   const changeCategory = (e) => {
     const category = e.target.name;
-    if (category === 'generalWords') {
-      const generalCount = +localStorage.getItem('generalCount') ?? 0;
+    if (category === "generalWords") {
+      const generalCount = +localStorage.getItem("generalCount") ?? 0;
       setScroll(generalCount);
     } else {
-      setScroll(0)
+      setScroll(0);
     }
     if (currentCategory !== category) {
       setCurrentCategory(category);
       localStorage.setItem("category", category);
     }
   };
-  const logOut = () => dispatch(userLogOut());
+  const logOut = () => {
+    setScroll(0);
+    dispatch(userLogOut());
+  };
   // navbar-dark bg-dark
   return (
     <nav className="Navbar navbar navbar-expand-lg navbar-light bg-light">
@@ -51,9 +60,11 @@ const Navbar = ({ categories, currentCategory, setCurrentCategory, setScroll }) 
                 onClick={changeCategory}
               >
                 <a className="nav-link" name={item}>
-                  {(item === "generalWords" && `All (${general_words_length - 1})`) ||
-                    (item === "knownWords" && `Known (${known_words_length})`) ||
-                    (item === "unknownWords" && `Unknown (${unknownWords  })`) ||
+                  {(item === "generalWords" &&
+                    `All (${general_words_length - 1})`) ||
+                    (item === "knownWords" &&
+                      `Known (${known_words_length})`) ||
+                    (item === "unknownWords" && `Unknown (${unknownWords})`) ||
                     (item === "changedWords" && "Changed") ||
                     (item === "newWords" && "Your")}
                 </a>
@@ -63,12 +74,7 @@ const Navbar = ({ categories, currentCategory, setCurrentCategory, setScroll }) 
         </ul>
       </div>
       <div className="nav_button_container">
-        {
-          loginned &&
-          <div className="nav_user">
-            {login}
-          </div>
-        }
+        {loginned && <div className="nav_user">{login}</div>}
         {!loginned && (
           <>
             <NavLink to="/register">
