@@ -17,8 +17,8 @@ const FontRegular = ({cardItemFont, cardItemFontSet, notificationHandler}) => {
   }
   return (
     <div className="FontRegular">
-      <div onClick={() => changeFont('+')} className="regular_item">+</div>
-      <div onClick={() => changeFont('-')} className="regular_item">-</div>
+      <div onClick={() => changeFont('+')} className="regular_item">A+</div>
+      <div onClick={() => changeFont('-')} className="regular_item">A-</div>
     </div>
   )
 };

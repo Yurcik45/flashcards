@@ -17,9 +17,15 @@ const CardContainer = ({
       ? redux_words[currentCategory]
       : redux_user[currentCategory];
   const arrayLength = words && words.length;
-  const scrollLeft = () => scroll > 0 && setScroll(+scroll - 1);
-  const scrollRight = () => scroll < arrayLength - 1 && setScroll(+scroll + 1);
+  const scrollLeft = () => {
+    scroll > 0 && setScroll(+scroll - 1);
+  };
+  const scrollRight = () => {
+    scroll < arrayLength - 1 && setScroll(+scroll + 1);
+  };
   useEffect(() => {
+    const category = localStorage.getItem('category') ?? 'generalWords';
+    category === 'generalWords' && localStorage.setItem('generalCount', scroll)
     setCurrentWord({
       original: words[scroll]?.original && words[scroll].original,
       translate: words[scroll]?.original && words[scroll].translate,

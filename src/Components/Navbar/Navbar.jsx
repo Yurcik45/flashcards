@@ -13,7 +13,12 @@ const Navbar = ({ categories, currentCategory, setCurrentCategory, setScroll }) 
   const loginned = user.loginned;
   const login = user.login;
   const changeCategory = (e) => {
-    setScroll(0);
+    if (currentCategory !== 'generalWords') {
+      const generalCount = +localStorage.getItem('generalCount') ?? 0;
+      setScroll(generalCount);
+    } else {
+      setScroll(0)
+    }
     const category = e.target.name;
     if (currentCategory !== category) {
       setCurrentCategory(category);
@@ -48,7 +53,7 @@ const Navbar = ({ categories, currentCategory, setCurrentCategory, setScroll }) 
                 <a className="nav-link" name={item}>
                   {(item === "generalWords" && `All (${general_words_length})`) ||
                     (item === "knownWords" && `Known (${known_words_length})`) ||
-                    (item === "unknownWords" && `Unknown (${unknownWords})`) ||
+                    (item === "unknownWords" && `Unknown (${unknownWords  })`) ||
                     (item === "changedWords" && "Changed") ||
                     (item === "newWords" && "Your")}
                 </a>
