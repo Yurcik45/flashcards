@@ -14,8 +14,7 @@ import {
   LOGOUT_USER_SUCCESS,
 } from "../types";
 import axios from "axios";
-
-const serv = "http://localhost:4000";
+import { serv } from "../serv";
 
 const requestConfig = { headers: { "Content-Type": "application/json" } };
 

@@ -7,10 +7,9 @@ import {
   ADD_UNKNOWN_WORD_FAIL,
 } from "../types";
 import axios from "axios";
+import { serv } from "../serv";
 
 const requestConfig = { headers: { "Content-Type": "application/json" } };
-
-const serv = "http://localhost:4000";
 
 export const getAllWords = (limit) => (dispatch) => {
   const url = `${serv}/api?limit=${limit ? limit : 0}`;
