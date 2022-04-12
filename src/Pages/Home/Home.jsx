@@ -31,6 +31,13 @@ const Home = ({ currentCategory, notificationHandler, scroll, setScroll }) => {
     }
   }, [local_user]);
 
+  const scrollLeft = () => {
+    scroll > 0 && setScroll(+scroll - 1);
+  };
+  const scrollRight = arrayLength => {
+    scroll < arrayLength - 1 && setScroll(+scroll + 1);
+  };
+
   return (
     <div className="Home">
       <CardContainer
@@ -39,6 +46,8 @@ const Home = ({ currentCategory, notificationHandler, scroll, setScroll }) => {
         setScroll={setScroll}
         setCurrentWord={setCurrentWord}
         cardItemFont={cardItemFont}
+        scrollLeft={scrollLeft}
+        scrollRight={scrollRight}
       />
       <WordsList
         currentCategory={currentCategory}
@@ -60,6 +69,8 @@ const Home = ({ currentCategory, notificationHandler, scroll, setScroll }) => {
           currentWord={currentWord}
           notificationHandler={notificationHandler}
           setShowModal={setShowModal}
+          currentCategory={currentCategory}
+          scrollRight={scrollRight}
         />
       )}
       {/* {showModal.status && (

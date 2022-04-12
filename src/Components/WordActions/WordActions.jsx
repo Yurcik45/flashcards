@@ -4,7 +4,13 @@ import { addWordAction, changeWord, getUser } from "../../redux/actions/user";
 import { useSelector } from "react-redux";
 import { wordActionButtons } from "./WordActionbuttons";
 
-const WordActions = ({ currentWord, notificationHandler, setShowModal }) => {
+const WordActions = ({
+  currentWord,
+  notificationHandler,
+  setShowModal,
+  currentCategory,
+  scrollRight,
+}) => {
   const dispatch = useDispatch();
   const category = localStorage.getItem("category");
   const user = useSelector((state) => state.user);
@@ -13,6 +19,7 @@ const WordActions = ({ currentWord, notificationHandler, setShowModal }) => {
   const unknownWords = user.unknownWords;
   const changedWords = user.changedWords;
   const newWords = user.newWords;
+  const redux_words = useSelector((state) => state.words);
 
   const callWordAction = (action) => {
     const addWordConditions = (addedListArr, list) => {
@@ -28,23 +35,30 @@ const WordActions = ({ currentWord, notificationHandler, setShowModal }) => {
         if (res.data.code === 1)
           return notificationHandler(res.data.msg, "danger");
         dispatch(getUser(login));
-        return notificationHandler(res.data.msg, "success");
+        currentCategory === "generalWords" && scrollRight(arrayLength)
+        notificationHandler(res.data.msg, "success")
       });
-    }
+    };
+
+    const words =
+      currentCategory === "generalWords"
+        ? redux_words[currentCategory]
+        : user[currentCategory];
+    const arrayLength = words && words.length;
     switch (action) {
       case "add_to_known":
-        addWordConditions(knownWords, "knownWords")
+        addWordConditions(knownWords, "knownWords");
         break;
       case "add_to_unknown":
-        addWordConditions(unknownWords, "unknownWords")
+        addWordConditions(unknownWords, "unknownWords");
         break;
-      case "add_to_changed":
-        const oldChangedWords = changedWords.map(ch => ch.old)
-        addWordConditions(oldChangedWords, "changedWords")
-        break;
-      case "add_to_new":
-        addWordConditions(newWords, "newWords")
-        break;
+      // case "add_to_changed":
+      //   const oldChangedWords = changedWords.map((ch) => ch.old);
+      //   addWordConditions(oldChangedWords, "changedWords");
+      //   break;
+      // case "add_to_new":
+      //   addWordConditions(newWords, "newWords");
+      //   break;
       default:
         break;
     }

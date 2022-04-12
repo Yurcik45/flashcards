@@ -10,6 +10,8 @@ const CardContainer = ({
   setScroll,
   setCurrentWord,
   cardItemFont,
+  scrollLeft,
+  scrollRight,
 }) => {
   const redux_words = useSelector((state) => state.words);
   const redux_user = useSelector((state) => state.user);
@@ -18,12 +20,7 @@ const CardContainer = ({
       ? redux_words[currentCategory]
       : redux_user[currentCategory];
   const arrayLength = words && words.length;
-  const scrollLeft = () => {
-    scroll > 0 && setScroll(+scroll - 1);
-  };
-  const scrollRight = () => {
-    scroll < arrayLength - 1 && setScroll(+scroll + 1);
-  };
+
   useEffect(() => {
     const category = localStorage.getItem("category") ?? "generalWords";
     category === "generalWords" && localStorage.setItem("generalCount", scroll);
@@ -39,7 +36,7 @@ const CardContainer = ({
     </button>
   );
   const nextButton = (
-    <button className="scrollButton" onClick={scrollRight}>
+    <button className="scrollButton" onClick={() => scrollRight(arrayLength)}>
       next
     </button>
   );
