@@ -8,7 +8,7 @@ import space_button from "../../assets/images/hint/space_button.svg";
 const InfoIsland = () => {
   const hintTitle = (
     <>
-      <p>SOME HINTS:</p>
+      <p>SOME HINTS <text style={{textDecoration: 'underline', padding: '0 5px 0 3px'}}>if you use PC</text>:</p>
       <p>
         press <img className="hint_img" src={space_button} /> (space) to show translate
       </p>

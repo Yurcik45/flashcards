@@ -13,6 +13,7 @@
   border-radius: 10px
   border: 1px solid black
   color: black
+  z-index: 1
 
 .enpty_words_list
   width: 200px
@@ -32,5 +33,25 @@
   .fully_words_list
     width: 645px
 @media screen and (max-width: 800px)
+  .WordsList
+    right: 10px
   .fully_words_list
     width: 325px
+  .enpty_words_list
+    width: 180px
+    height: 45px
+    font-size: 16px
+@media screen and (max-width: 600px)
+  .fully_words_list
+    top: 10px
+    max-height: 98%
+  .enpty_words_list
+    top: 80px
+    width: 160px
+    height: 40px
+    font-size: 15px
+@media screen and (max-width: 400px)
+  .enpty_words_list
+    width: 130px
+    height: 35px
+    font-size: 14px

@@ -9,6 +9,9 @@
   font-family: 'Arvo', serif;
   /* border: 1px solid red; */
 }
+a {
+  color: transparent;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -33,4 +36,12 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+  }
 }

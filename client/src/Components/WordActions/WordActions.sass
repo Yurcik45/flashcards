@@ -5,5 +5,30 @@
 
 .WordActions
   margin-top: 20px
-.nav_button
+.nav_action_batton
+  min-width: 200px
   margin: 0 15px
+
+@media screen and (max-width: 1200px)
+  .nav_action_batton
+    min-width: 170px
+@media screen and (max-width: 1000px)
+  .nav_action_batton
+    min-width: 150px
+    font-size: 13px
+@media screen and (max-width: 800px)
+  .nav_action_batton
+    min-width: 140px
+    font-size: 12px
+@media screen and (max-width: 500px)
+  .WordActions
+    flex-direction: column
+    margin-bottom: 100px
+  .nav_action_batton
+    margin: 8px 0 !important
+@media screen and (max-width: 500px)
+  .WordActions
+    margin-bottom: 140px
+@media screen and (max-height: 500px)
+  .WordActions
+    margin-bottom: 40px

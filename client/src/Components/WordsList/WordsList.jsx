@@ -51,6 +51,13 @@ const WordsList = ({
       ? redux_words[currentCategory]
       : redux_user[currentCategory];
   };
+  const wordsListAwayListener = () => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    var isMobile = /iPhone|Android/i.test(navigator.userAgent);
+    const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
+    if (isMobile || isTablet) return console.log();
+    setViewWordsList(false)
+  }
   return (
     <div
       onClick={openWordsArea}
@@ -66,12 +73,13 @@ const WordsList = ({
       }}
     >
       {words && viewWordsList ? (
-        <ClickAwayListener onClickAway={() => setViewWordsList(false)}>
+        <ClickAwayListener onClickAway={wordsListAwayListener}>
           <WordsArea
             words={words}
             current_word={words[scroll]}
             setScroll={setScroll}
             setCurrentWord={setCurrentWord}
+            setViewWordsList={setViewWordsList}
           />
         </ClickAwayListener>
       ) : (

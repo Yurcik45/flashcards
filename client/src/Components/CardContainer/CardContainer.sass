@@ -13,14 +13,13 @@
 
 .arrowsMobile
   display: flex
-  align-items: center
-  justify-content: center
+  justify-content: space-between
+  width: 400px
 
 .bottomScrollButtonPos
   display: none
 .aboveScrollButtonPos
   display: flex
-  margin: 0 20px 0 20px
 
 @media screen and (max-width: 1200px)
   .CardContainer
@@ -32,3 +31,37 @@
     margin: 20px 40px 10px 40px
   .aboveScrollButtonPos
     display: none !important
+
+@media screen and (max-width: 850px)
+  .CardContainer
+    justify-content: flex-start
+    width: 600px
+    max-height: 340px
+    border: none
+
+@media screen and (max-width: 850px)
+  .CardContainer
+    width: 600px
+    max-height: 350px
+
+@media screen and (max-width: 700px)
+  .CardContainer
+    width: 500px
+    max-height: 300px
+
+@media screen and (max-width: 550px)
+  .CardContainer
+    width: 440px
+    max-height: 300px
+  .arrowsMobile
+    width: 350px
+  .scrollButton
+    min-width: 80px !important
+    width: 110px !important
+    height: 40px !important
+
+@media screen and (max-width: 450px)
+  .CardContainer
+    width: 100vw
+  .arrowsMobile
+    width: 70vw

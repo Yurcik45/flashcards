@@ -72,7 +72,7 @@ const WordActions = ({
               key={id}
               onClick={() => callWordAction(btn.clickAction)}
               type="button"
-              className={`btn nav_button ${btn.class}`}
+              className={`btn nav_button nav_action_batton ${btn.class}`}
             >
               {btn.text}
             </button>

@@ -16,8 +16,8 @@ const AuthForm = ({ type, inputData, action }) => {
                 style={{ borderRadius: "1rem" }}
               >
                 <div className="card-body p-5 text-center">
-                  <div className="mb-1 md-5 mt-md-4 pb-5">
-                    <h2 className="fw-bold mb-2 text-uppercase">
+                  <div className="mb-1 md-5 mt-md-4 pb-5 card-body-child">
+                    <h2 className="fw-bold mb-1 text-uppercase">
                       {condition ? "Register" : "Login"}
                     </h2>
                     <p className="text-white-50 mb-5">
