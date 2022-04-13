@@ -59,13 +59,13 @@ const CardContainer = ({
           scrollLeft();
           break;
         case 39:
-          scrollRight();
+          scrollRight(arrayLength);
           break;
         case 80:
           scrollLeft();
           break;
         case 78:
-          scrollRight();
+          scrollRight(arrayLength);
           break;
       }
     };
