@@ -1,23 +1,88 @@
-.Navbar
+.Navbar,
+.navbar-brand,
+.nav_button_container,
+.nav_button
   display: flex
-  align-content: inherit
+  align-content: center
   justify-content: center
+  align-items: center
+
+.Navbar
   width: 100vw
-  height: 70px
+  max-width: 1500px
+  height: 55px
   padding: 0 20px
+
+.nav-item
+  margin-bottom: 5px
+
+.nav-link
+  padding: 5px 10px 4px 10px
 
 .activeNavLink
   border-bottom: 1px solid grey
 
 .nav_button_container
-  display: flex
-  align-items: center
   justify-content: space-between
-  .nav_user
-    margin-right: 20px
-    font-size: 20px
-    font-family: monospace, sans-serif
+
+.nav_user
+  margin-right: 20px
+  font-size: 20px
+  font-family: monospace, sans-serif
+
+.nav_button
+  width: 100px
+  height: 40px
+  margin: 0 10px
+
+@media screen and (max-width: 1000px)
+  .Navbar
+    height: 85px
+  .navbar-brand
+    margin: 0
+    padding: 10px 0 0 0
+    width: 100%
+    justify-content: space-between
+  .nav_button_container a
+    width: 115px
+  .navbar-nav
+    display: flex
+    flex-direction: row
+  .nav-item
+    margin-right: 25px
+
+@media screen and (max-width: 800px)
+  .navbar-brand
+    padding: 5px 0 0 0
+  .nav_button_container a
+    width: 95px
+  .nav-item
+    margin-bottom: 0
   .nav_button
-    width: 100px
-    height: 40px
-    margin: 0 10px
+    max-width: 80px
+    max-height: 35px
+
+@media screen and (max-width: 500px)
+  .Navbar
+    align-items: flex-start
+    justify-content: flex-start
+    align-content: flex-start
+    padding: 0 10px
+    height: 70px
+  .navbar-brand
+    font-size: 17px
+    margin: 0
+    width: 100%
+    justify-content: space-between
+  .nav_button_container a
+    width: 85px
+  .navbar-nav
+    display: flex
+    flex-direction: row
+  .nav-item
+    margin-right: 15px
+    font-size: 14px
+  .nav_button
+    max-width: 70px
+    max-height: 30px
+  

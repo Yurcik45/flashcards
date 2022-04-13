@@ -35,20 +35,38 @@ const Navbar = ({
     setScroll(0);
     dispatch(userLogOut());
   };
+  const userActionsSide = <div className="nav_button_container">
+  {loginned && <div className="nav_user">{login}</div>}
+  {!loginned && (
+    <>
+      <NavLink to="/register">
+        <button type="button" className="btn btn-primary nav_button">
+          Sign in
+        </button>
+      </NavLink>
+      <NavLink to="/auth">
+        <button type="button" className="btn btn-success nav_button">
+          Log in
+        </button>
+      </NavLink>
+    </>
+  )}
+  {loginned && (
+    <NavLink to="/" onClick={logOut}>
+      <button type="button" className="btn btn-danger nav_button">
+        Log out
+      </button>
+    </NavLink>
+  )}
+</div>
   // navbar-dark bg-dark
   return (
     <nav className="Navbar navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand">Flashcards</a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse">
+      <a className="navbar-brand">
+        Flashcards
+        {window.innerWidth <= 1000 && userActionsSide}
+      </a>
+      <div className="navbar-collapse">
         <ul className="navbar-nav">
           {categories.map((item, id) => {
             return (
@@ -73,30 +91,7 @@ const Navbar = ({
           })}
         </ul>
       </div>
-      <div className="nav_button_container">
-        {loginned && <div className="nav_user">{login}</div>}
-        {!loginned && (
-          <>
-            <NavLink to="/register">
-              <button type="button" className="btn btn-primary nav_button">
-                Sign in
-              </button>
-            </NavLink>
-            <NavLink to="/auth">
-              <button type="button" className="btn btn-success nav_button">
-                Log in
-              </button>
-            </NavLink>
-          </>
-        )}
-        {loginned && (
-          <NavLink to="/" onClick={logOut}>
-            <button type="button" className="btn btn-danger nav_button">
-              Log out
-            </button>
-          </NavLink>
-        )}
-      </div>
+      {window.innerWidth > 1000 && userActionsSide}
     </nav>
   );
 };
